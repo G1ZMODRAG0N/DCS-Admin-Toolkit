@@ -1,0 +1,12 @@
+=====CHANGELOG=====
+
+05/24/22
+
+0.2.82 to 0.2.83
+-- Issue with set uPN to msol user
+-- ObjectID undefined replaced with UserPrincipalName object
+
+08/07/22
+
+--improved loading
+--started dev on new options

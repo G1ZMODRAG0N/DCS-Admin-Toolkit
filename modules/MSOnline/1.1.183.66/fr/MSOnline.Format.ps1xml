@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Configuration>
+  <ViewDefinitions>
+    <View>
+      <Name>Microsoft.Online.Administration.User</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Online.Administration.User</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader/>
+          <TableColumnHeader/>
+          <TableColumnHeader/>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>UserPrincipalName</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>DisplayName</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>isLicensed</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Online.Administration.UserExtended</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Online.Administration.UserExtended</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader/>
+          <TableColumnHeader/>
+          <TableColumnHeader/>
+          <TableColumnHeader/>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>Password</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>UserPrincipalName</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>DisplayName</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>isLicensed</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Online.Administration.Contact</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Online.Administration.Contact</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader/>
+          <TableColumnHeader/>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>EmailAddress</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>DisplayName</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Online.Administration.Domain</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Online.Administration.Domain</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader/>
+          <TableColumnHeader>
+            <Width>15</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>15</Width>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Status</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Authentication</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Online.Administration.Group</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Online.Administration.Group</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Width>38</Width>
+          </TableColumnHeader>
+          <TableColumnHeader/>
+          <TableColumnHeader/>
+          <TableColumnHeader/>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>ObjectId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>DisplayName</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>GroupType</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Description</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Online.Administration.Role</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Online.Administration.Role</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Width>38</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>32</Width>
+          </TableColumnHeader>
+          <TableColumnHeader/>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>ObjectId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Description</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Online.Administration.RoleMember</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Online.Administration.RoleMember</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader/>
+          <TableColumnHeader/>
+          <TableColumnHeader/>
+          <TableColumnHeader/>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>RoleMemberType</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>EmailAddress</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>DisplayName</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>isLicensed</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Online.Administration.GroupMember</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Online.Administration.GroupMember</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader/>
+          <TableColumnHeader/>
+          <TableColumnHeader/>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>GroupMemberType</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>EmailAddress</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>DisplayName</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Online.Administration.AccountSkuDetails</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Online.Administration.AccountSkuDetails</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader/>
+          <TableColumnHeader>
+            <Width>15</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>15</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>15</Width>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>AccountSkuId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>ActiveUnits</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>WarningUnits</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>ConsumedUnits</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Online.Administration.Subscription</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Online.Administration.Subscription</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Width>40</Width>
+          </TableColumnHeader>
+          <TableColumnHeader/>
+          <TableColumnHeader>
+            <Width>15</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Width>15</Width>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>ObjectId</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>SkuPartNumber</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Status</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>TotalLicenses</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Online.Administration.DomainDnsTxtRecord</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Online.Administration.DomainDnsTxtRecord</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <PropertyName>Label</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>Text</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>Ttl</PropertyName>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+    <View>
+      <Name>Microsoft.Online.Administration.DomainDnsMXRecord</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Online.Administration.DomainDnsMXRecord</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <PropertyName>Label</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>MailExchange</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>Preference</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>Ttl</PropertyName>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+    <View>
+      <Name>Microsoft.Online.Administration.CompanyInformation</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Online.Administration.CompanyInformation</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <PropertyName>DisplayName</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PreferredLanguage</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>Street</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>City</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>State</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PostalCode</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>Country</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>CountryLetterCode</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>TelephoneNumber</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>MarketingNotificationEmails</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>TechnicalNotificationEmails</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>SelfServePasswordResetEnabled</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>UsersPermissionToCreateGroupsEnabled</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>UsersPermissionToCreateLOBAppsEnabled</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>UsersPermissionToReadOtherUsersEnabled</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>UsersPermissionToUserConsentToAppEnabled</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>DirectorySynchronizationEnabled</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>DirSyncServiceAccount</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>LastDirSyncTime</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>LastPasswordSyncTime</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PasswordSynchronizationEnabled</PropertyName>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+    <View>
+      <Name>Microsoft.Online.Administration.PartnerInformation</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Online.Administration.PartnerInformation</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <PropertyName>PartnerCompanyName</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>CompanyType</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>DapEnabled</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PartnerSupportTelephones</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PartnerSupportEmails</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PartnerSupportUrl</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PartnerCommerceUrl</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PartnerHelpUrl</PropertyName>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+    <View>
+      <Name>Microsoft.Online.Administration.DomainFederationSettings</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Online.Administration.DomainFederationSettings</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <PropertyName>ActiveLogOnUri</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>DefaultInteractiveAuthenticationMethod</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>FederationBrandName</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>IssuerUri</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>LogOffUri</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>MetadataExchangeUri</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>NextSigningCertificate</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>OpenIdConnectDiscoveryEndpoint</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>PassiveLogOnUri</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>SigningCertificate</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>SupportsMfa</PropertyName>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+    <View>
+      <Name>Microsoft.Online.Administration.PartnerContract</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Online.Administration.PartnerContract</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <PropertyName>TenantId</PropertyName>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+    <View>
+      <Name>Microsoft.Online.Administration.ServiceStatus</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Online.Administration.ServiceStatus</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>ServicePlan</Label>
+          </TableColumnHeader>
+          <TableColumnHeader/>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <ScriptBlock>
+                  $_.ServicePlan.ServiceName
+                </ScriptBlock>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>ProvisioningStatus</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>Microsoft.Online.Administration.ServicePrincipalCredential</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Online.Administration.ServicePrincipalCredential</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <PropertyName>Type</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>Value</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>KeyId</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>StartDate</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>EndDate</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>Usage</PropertyName>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+    <View>
+      <Name>Microsoft.Online.Administration.ServicePrincipalExtended</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Online.Administration.ServicePrincipalExtended</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <PropertyName>DisplayName</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>ServicePrincipalNames</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>ObjectId</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>AppPrincipalId</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>TrustedForDelegation</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>AccountEnabled</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>Addresses</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>KeyType</Label>
+                <ScriptBlock>
+                  if ($_.Credentials) { $_.Credentials[0].Type }
+                </ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>KeyId</Label>
+                <ScriptBlock>
+                  if ($_.Credentials) { $_.Credentials[0].KeyId }
+                </ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>StartDate</Label>
+                <ScriptBlock>
+                  if ($_.Credentials) { $_.Credentials[0].StartDate }
+                </ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>EndDate</Label>
+                <ScriptBlock>
+                  if ($_.Credentials) { $_.Credentials[0].EndDate }
+                </ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>Usage</Label>
+                <ScriptBlock>
+                  if ($_.Credentials) { $_.Credentials[0].Usage }
+                </ScriptBlock>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+  </ViewDefinitions>
+</Configuration>
+
+<!-- SIG # Begin signature block -->
+<!-- MIIjhwYJKoZIhvcNAQcCoIIjeDCCI3QCAQExDzANBglghkgBZQMEAgEFADB5Bgor -->
+<!-- BgEEAYI3AgEEoGswaTA0BgorBgEEAYI3AgEeMCYCAwEAAAQQH8w7YFlLCE63JNLG -->
+<!-- KX7zUQIBAAIBAAIBAAIBAAIBADAxMA0GCWCGSAFlAwQCAQUABCAkObKPWHCoSxqS -->
+<!-- y+/cw4bXnL3CvvOpO2juwL1MjOfB6KCCDXYwggX0MIID3KADAgECAhMzAAAB3vl+ -->
+<!-- gOdHKPWkAAAAAAHeMA0GCSqGSIb3DQEBCwUAMH4xCzAJBgNVBAYTAlVTMRMwEQYD -->
+<!-- VQQIEwpXYXNoaW5ndG9uMRAwDgYDVQQHEwdSZWRtb25kMR4wHAYDVQQKExVNaWNy -->
+<!-- b3NvZnQgQ29ycG9yYXRpb24xKDAmBgNVBAMTH01pY3Jvc29mdCBDb2RlIFNpZ25p -->
+<!-- bmcgUENBIDIwMTEwHhcNMjAxMjE1MjEzMTQ0WhcNMjExMjAyMjEzMTQ0WjB0MQsw -->
+<!-- CQYDVQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMHUmVkbW9u -->
+<!-- ZDEeMBwGA1UEChMVTWljcm9zb2Z0IENvcnBvcmF0aW9uMR4wHAYDVQQDExVNaWNy -->
+<!-- b3NvZnQgQ29ycG9yYXRpb24wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB -->
+<!-- AQC42o7GuqPBrC9Z9N+JtpXANgk2m77zmZSuuBKQmr5pZRmQCht/u/V21N5nwBWK -->
+<!-- NGwCZNdI98dyYGYORRZgrMOh8JWxDBjLMQYtqklGLw5ZPw3OCGCIM2ZU0snDlvZ3 -->
+<!-- nKwys5NtPlY4shJxcVM2dhMnXhRTqvtexmeWpfmvtiop7jJn2Sdq0iDybDyU2vMz -->
+<!-- nH2ASetgjvuW2eP4d6zQXlboTBBu1ZxTv/aCRrWCWUPge8lHr3wtiPJHMyxmRHXT -->
+<!-- ulS2VksZ6iI9RLOdlqup9UOcnKRaj1usJKjwADu75+fegAZ4HPWSEXXmpBmuhvbT -->
+<!-- Euwa04eiL7ZKbG3mY9EqpiJ7AgMBAAGjggFzMIIBbzAfBgNVHSUEGDAWBgorBgEE -->
+<!-- AYI3TAgBBggrBgEFBQcDAzAdBgNVHQ4EFgQUbrkwVx/G26M/PsNzHEotPDOdBMcw -->
+<!-- RQYDVR0RBD4wPKQ6MDgxHjAcBgNVBAsTFU1pY3Jvc29mdCBDb3Jwb3JhdGlvbjEW -->
+<!-- MBQGA1UEBRMNMjMwMDEyKzQ2MzAwODAfBgNVHSMEGDAWgBRIbmTlUAXTgqoXNzci -->
+<!-- tW2oynUClTBUBgNVHR8ETTBLMEmgR6BFhkNodHRwOi8vd3d3Lm1pY3Jvc29mdC5j -->
+<!-- b20vcGtpb3BzL2NybC9NaWNDb2RTaWdQQ0EyMDExXzIwMTEtMDctMDguY3JsMGEG -->
+<!-- CCsGAQUFBwEBBFUwUzBRBggrBgEFBQcwAoZFaHR0cDovL3d3dy5taWNyb3NvZnQu -->
+<!-- Y29tL3BraW9wcy9jZXJ0cy9NaWNDb2RTaWdQQ0EyMDExXzIwMTEtMDctMDguY3J0 -->
+<!-- MAwGA1UdEwEB/wQCMAAwDQYJKoZIhvcNAQELBQADggIBAHBTJKafCqTZswwxIpvl -->
+<!-- yU+K/+9oxjswaMqV+yGkRLa7LDqf917yb+IHjsPphMwe0ncDkpnNtKazW2doVHh3 -->
+<!-- wMNXUYX6DzyVg1Xr/MTYaai0/GkPR/RN4MSBfoVBDzXJSisnYEWlK1TbI1J1mNTU -->
+<!-- iyiaktveVsH3xQyOVXQEpKFW17xYoHGjYm8s5v22mRE/ShVgsEW9ckxeQbJPCkPc -->
+<!-- PiqD4eXwPguTxv06Pwxva8lsjsPDvo2EgwozBCNGRAxsv2pEl0bh+yOtaFpfQWG7 -->
+<!-- yMskiLQwWWoWFyuzm6yiKmZ/jdfO98xR1bFUhQMdwQoMi0lCUMx6YQJj1WpNUTDq -->
+<!-- X0ttJGny2aPWsoOgZ5fzKHNfCowOA+7hLc6gCVRBzyMN/xvV19aKymPt8I/J5gqA -->
+<!-- ZCQT19YgNKyhHUYS4GnFyMr/0GCezE8kexDGeQ3JX1TpHQvcz/dghK30fWM9z44l -->
+<!-- BjNcMV/HtTuefSFsr9tCp53wVaw65LudxSjH+/a2zUa85KKCBzj/GU4OhDaa5Wd4 -->
+<!-- 8jr0JSm/515Ynzm1Xje5Ai/qo9xaGCrjrVcJUxBXd/SZPorm3HN6U1aJnL2Kw6nY -->
+<!-- 8Rs205CIWT28aFTecMQ6+KnMt1NZR4pogBnnpWSLc92JMbUd1Z6IbauU6U/oOjyl -->
+<!-- WOtkYUKbyE7EvK9GwUQXMds/MIIHejCCBWKgAwIBAgIKYQ6Q0gAAAAAAAzANBgkq -->
+<!-- hkiG9w0BAQsFADCBiDELMAkGA1UEBhMCVVMxEzARBgNVBAgTCldhc2hpbmd0b24x -->
+<!-- EDAOBgNVBAcTB1JlZG1vbmQxHjAcBgNVBAoTFU1pY3Jvc29mdCBDb3Jwb3JhdGlv -->
+<!-- bjEyMDAGA1UEAxMpTWljcm9zb2Z0IFJvb3QgQ2VydGlmaWNhdGUgQXV0aG9yaXR5 -->
+<!-- IDIwMTEwHhcNMTEwNzA4MjA1OTA5WhcNMjYwNzA4MjEwOTA5WjB+MQswCQYDVQQG -->
+<!-- EwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMHUmVkbW9uZDEeMBwG -->
+<!-- A1UEChMVTWljcm9zb2Z0IENvcnBvcmF0aW9uMSgwJgYDVQQDEx9NaWNyb3NvZnQg -->
+<!-- Q29kZSBTaWduaW5nIFBDQSAyMDExMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIIC -->
+<!-- CgKCAgEAq/D6chAcLq3YbqqCEE00uvK2WCGfQhsqa+laUKq4BjgaBEm6f8MMHt03 -->
+<!-- a8YS2AvwOMKZBrDIOdUBFDFC04kNeWSHfpRgJGyvnkmc6Whe0t+bU7IKLMOv2akr -->
+<!-- rnoJr9eWWcpgGgXpZnboMlImEi/nqwhQz7NEt13YxC4Ddato88tt8zpcoRb0Rrrg -->
+<!-- OGSsbmQ1eKagYw8t00CT+OPeBw3VXHmlSSnnDb6gE3e+lD3v++MrWhAfTVYoonpy -->
+<!-- 4BI6t0le2O3tQ5GD2Xuye4Yb2T6xjF3oiU+EGvKhL1nkkDstrjNYxbc+/jLTswM9 -->
+<!-- sbKvkjh+0p2ALPVOVpEhNSXDOW5kf1O6nA+tGSOEy/S6A4aN91/w0FK/jJSHvMAh -->
+<!-- dCVfGCi2zCcoOCWYOUo2z3yxkq4cI6epZuxhH2rhKEmdX4jiJV3TIUs+UsS1Vz8k -->
+<!-- A/DRelsv1SPjcF0PUUZ3s/gA4bysAoJf28AVs70b1FVL5zmhD+kjSbwYuER8ReTB -->
+<!-- w3J64HLnJN+/RpnF78IcV9uDjexNSTCnq47f7Fufr/zdsGbiwZeBe+3W7UvnSSmn -->
+<!-- Eyimp31ngOaKYnhfsi+E11ecXL93KCjx7W3DKI8sj0A3T8HhhUSJxAlMxdSlQy90 -->
+<!-- lfdu+HggWCwTXWCVmj5PM4TasIgX3p5O9JawvEagbJjS4NaIjAsCAwEAAaOCAe0w -->
+<!-- ggHpMBAGCSsGAQQBgjcVAQQDAgEAMB0GA1UdDgQWBBRIbmTlUAXTgqoXNzcitW2o -->
+<!-- ynUClTAZBgkrBgEEAYI3FAIEDB4KAFMAdQBiAEMAQTALBgNVHQ8EBAMCAYYwDwYD -->
+<!-- VR0TAQH/BAUwAwEB/zAfBgNVHSMEGDAWgBRyLToCMZBDuRQFTuHqp8cx0SOJNDBa -->
+<!-- BgNVHR8EUzBRME+gTaBLhklodHRwOi8vY3JsLm1pY3Jvc29mdC5jb20vcGtpL2Ny -->
+<!-- bC9wcm9kdWN0cy9NaWNSb29DZXJBdXQyMDExXzIwMTFfMDNfMjIuY3JsMF4GCCsG -->
+<!-- AQUFBwEBBFIwUDBOBggrBgEFBQcwAoZCaHR0cDovL3d3dy5taWNyb3NvZnQuY29t -->
+<!-- L3BraS9jZXJ0cy9NaWNSb29DZXJBdXQyMDExXzIwMTFfMDNfMjIuY3J0MIGfBgNV -->
+<!-- HSAEgZcwgZQwgZEGCSsGAQQBgjcuAzCBgzA/BggrBgEFBQcCARYzaHR0cDovL3d3 -->
+<!-- dy5taWNyb3NvZnQuY29tL3BraW9wcy9kb2NzL3ByaW1hcnljcHMuaHRtMEAGCCsG -->
+<!-- AQUFBwICMDQeMiAdAEwAZQBnAGEAbABfAHAAbwBsAGkAYwB5AF8AcwB0AGEAdABl -->
+<!-- AG0AZQBuAHQALiAdMA0GCSqGSIb3DQEBCwUAA4ICAQBn8oalmOBUeRou09h0ZyKb -->
+<!-- C5YR4WOSmUKWfdJ5DJDBZV8uLD74w3LRbYP+vj/oCso7v0epo/Np22O/IjWll11l -->
+<!-- hJB9i0ZQVdgMknzSGksc8zxCi1LQsP1r4z4HLimb5j0bpdS1HXeUOeLpZMlEPXh6 -->
+<!-- I/MTfaaQdION9MsmAkYqwooQu6SpBQyb7Wj6aC6VoCo/KmtYSWMfCWluWpiW5IP0 -->
+<!-- wI/zRive/DvQvTXvbiWu5a8n7dDd8w6vmSiXmE0OPQvyCInWH8MyGOLwxS3OW560 -->
+<!-- STkKxgrCxq2u5bLZ2xWIUUVYODJxJxp/sfQn+N4sOiBpmLJZiWhub6e3dMNABQam -->
+<!-- ASooPoI/E01mC8CzTfXhj38cbxV9Rad25UAqZaPDXVJihsMdYzaXht/a8/jyFqGa -->
+<!-- J+HNpZfQ7l1jQeNbB5yHPgZ3BtEGsXUfFL5hYbXw3MYbBL7fQccOKO7eZS/sl/ah -->
+<!-- XJbYANahRr1Z85elCUtIEJmAH9AAKcWxm6U/RXceNcbSoqKfenoi+kiVH6v7RyOA -->
+<!-- 9Z74v2u3S5fi63V4GuzqN5l5GEv/1rMjaHXmr/r8i+sLgOppO6/8MO0ETI7f33Vt -->
+<!-- Y5E90Z1WTk+/gFcioXgRMiF670EKsT/7qMykXcGhiJtXcVZOSEXAQsmbdlsKgEhr -->
+<!-- /Xmfwb1tbWrJUnMTDXpQzTGCFWcwghVjAgEBMIGVMH4xCzAJBgNVBAYTAlVTMRMw -->
+<!-- EQYDVQQIEwpXYXNoaW5ndG9uMRAwDgYDVQQHEwdSZWRtb25kMR4wHAYDVQQKExVN -->
+<!-- aWNyb3NvZnQgQ29ycG9yYXRpb24xKDAmBgNVBAMTH01pY3Jvc29mdCBDb2RlIFNp -->
+<!-- Z25pbmcgUENBIDIwMTECEzMAAAHe+X6A50co9aQAAAAAAd4wDQYJYIZIAWUDBAIB -->
+<!-- BQCgga4wGQYJKoZIhvcNAQkDMQwGCisGAQQBgjcCAQQwHAYKKwYBBAGCNwIBCzEO -->
+<!-- MAwGCisGAQQBgjcCARUwLwYJKoZIhvcNAQkEMSIEIH49wQ8nCYgj8MdtNmiQEJer -->
+<!-- J/LjP0420mrAX9MTJdB3MEIGCisGAQQBgjcCAQwxNDAyoBSAEgBNAGkAYwByAG8A -->
+<!-- cwBvAGYAdKEagBhodHRwOi8vd3d3Lm1pY3Jvc29mdC5jb20wDQYJKoZIhvcNAQEB -->
+<!-- BQAEggEApFNlN4+EKwdNPCAZCSHQtzcPuLDyvf6szFzjmiNdZRMAC7zH4toxSwl6 -->
+<!-- DOTiyC/7P+WgmVu7FirMLHniJbC6o/xZfheKao50jwSnv8QQUedNwa5IUErUkSpB -->
+<!-- 3XSUtbF+AVtEgSbpm27jb7/3f4vwHBIRD7kUAgFmF1P5ziwpbO71unvXvQ+2bzRt -->
+<!-- gpuHRqfiPrEKKiEmeFqFH0untWXYF/BecQANQPO99BdPD8FcwZPaU2Zr713oOE93 -->
+<!-- 9tQvmKIJNKI3yEqQC+WcJk9xEJnqS7gwnP3M30hshJZiq2j5RMFYFSr74ZSc1FWr -->
+<!-- MF5rB1iXRFOny3rkDk3SgSFf4MXBQaGCEvEwghLtBgorBgEEAYI3AwMBMYIS3TCC -->
+<!-- EtkGCSqGSIb3DQEHAqCCEsowghLGAgEDMQ8wDQYJYIZIAWUDBAIBBQAwggFVBgsq -->
+<!-- hkiG9w0BCRABBKCCAUQEggFAMIIBPAIBAQYKKwYBBAGEWQoDATAxMA0GCWCGSAFl -->
+<!-- AwQCAQUABCA+78PxFHF1R5fkOuTvyF/nynDaZ6djuOCkJuHFkrmJpAIGYYIKIubP -->
+<!-- GBMyMDIxMTExMDAwMTY0NS4yNjJaMASAAgH0oIHUpIHRMIHOMQswCQYDVQQGEwJV -->
+<!-- UzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMHUmVkbW9uZDEeMBwGA1UE -->
+<!-- ChMVTWljcm9zb2Z0IENvcnBvcmF0aW9uMSkwJwYDVQQLEyBNaWNyb3NvZnQgT3Bl -->
+<!-- cmF0aW9ucyBQdWVydG8gUmljbzEmMCQGA1UECxMdVGhhbGVzIFRTUyBFU046Rjg3 -->
+<!-- QS1FMzc0LUQ3QjkxJTAjBgNVBAMTHE1pY3Jvc29mdCBUaW1lLVN0YW1wIFNlcnZp -->
+<!-- Y2Wggg5EMIIE9TCCA92gAwIBAgITMwAAAWOLZMbJhZZldgAAAAABYzANBgkqhkiG -->
+<!-- 9w0BAQsFADB8MQswCQYDVQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4G -->
+<!-- A1UEBxMHUmVkbW9uZDEeMBwGA1UEChMVTWljcm9zb2Z0IENvcnBvcmF0aW9uMSYw -->
+<!-- JAYDVQQDEx1NaWNyb3NvZnQgVGltZS1TdGFtcCBQQ0EgMjAxMDAeFw0yMTAxMTQx -->
+<!-- OTAyMjNaFw0yMjA0MTExOTAyMjNaMIHOMQswCQYDVQQGEwJVUzETMBEGA1UECBMK -->
+<!-- V2FzaGluZ3RvbjEQMA4GA1UEBxMHUmVkbW9uZDEeMBwGA1UEChMVTWljcm9zb2Z0 -->
+<!-- IENvcnBvcmF0aW9uMSkwJwYDVQQLEyBNaWNyb3NvZnQgT3BlcmF0aW9ucyBQdWVy -->
+<!-- dG8gUmljbzEmMCQGA1UECxMdVGhhbGVzIFRTUyBFU046Rjg3QS1FMzc0LUQ3Qjkx -->
+<!-- JTAjBgNVBAMTHE1pY3Jvc29mdCBUaW1lLVN0YW1wIFNlcnZpY2UwggEiMA0GCSqG -->
+<!-- SIb3DQEBAQUAA4IBDwAwggEKAoIBAQCtcRf2Ep3JdGKS/6jdhZ38I39IvGvguBC8 -->
+<!-- +VGctyTlOeFx/qx79cty4CmBrt8K7TUhGOB8+c+j0ZRCb7+2itrZu1rxUnrO4ixY -->
+<!-- UNPA1eIVcecxepZebjdrYtnyTWeiQ4zElWLmP8GmHTRaOzeJfMfO/9UkyKG9zw4m -->
+<!-- qgKBGdYRG5rka+OBCj/90Q4KPwGNKNNcwBeJOR78q389NxmiSGehCCIG2GxOhNi1 -->
+<!-- 9nCWfet2jWD2S2FWzZ074ju6dnhh7WgJJ9PEK81vac9Whgk1JQy0VC5zIkFSzYoG -->
+<!-- lNb/Dk87+2pQCJ05UXxS7zyFdCSdkj6vsFS8TxoYlbMBK1/fP7M1AgMBAAGjggEb -->
+<!-- MIIBFzAdBgNVHQ4EFgQUCTXK8XZyZ+4/MVqfRseQPtffPSkwHwYDVR0jBBgwFoAU -->
+<!-- 1WM6XIoxkPNDe3xGG8UzaFqFbVUwVgYDVR0fBE8wTTBLoEmgR4ZFaHR0cDovL2Ny -->
+<!-- bC5taWNyb3NvZnQuY29tL3BraS9jcmwvcHJvZHVjdHMvTWljVGltU3RhUENBXzIw -->
+<!-- MTAtMDctMDEuY3JsMFoGCCsGAQUFBwEBBE4wTDBKBggrBgEFBQcwAoY+aHR0cDov -->
+<!-- L3d3dy5taWNyb3NvZnQuY29tL3BraS9jZXJ0cy9NaWNUaW1TdGFQQ0FfMjAxMC0w -->
+<!-- Ny0wMS5jcnQwDAYDVR0TAQH/BAIwADATBgNVHSUEDDAKBggrBgEFBQcDCDANBgkq -->
+<!-- hkiG9w0BAQsFAAOCAQEAAohBggfXjuJTzo4yAmH7E6mpvSKnUbTI9tFAQVS4bn7z -->
+<!-- /cb5aCPC2fcDj6uLAqCUnYTC2sFFmXeu7xZTP4gT/u15KtdPU2nkEhODXPbnjNeX -->
+<!-- 5RL2qOGbcxqFk3MaQvmpWGNJFRiI+ksQUsZwpKGXrE+OFlSEwUC/+Nz5h8VQBQ9A -->
+<!-- tXA882uZ79Qkog752eKjcaT+mn/SGHymyQeGycQaudhWVUKkeHQOjWux+LE4YdQG -->
+<!-- P6mHOpM5kqYVLxMwqucT2fPk5bKDTWWM+kwEeqp3n09g/9w7J+15jvsDYyIugBFk -->
+<!-- CR2qsAe0eTlju0Ce6dO0Zf+E75DTM72ZfAQUn1+2IzCCBnEwggRZoAMCAQICCmEJ -->
+<!-- gSoAAAAAAAIwDQYJKoZIhvcNAQELBQAwgYgxCzAJBgNVBAYTAlVTMRMwEQYDVQQI -->
+<!-- EwpXYXNoaW5ndG9uMRAwDgYDVQQHEwdSZWRtb25kMR4wHAYDVQQKExVNaWNyb3Nv -->
+<!-- ZnQgQ29ycG9yYXRpb24xMjAwBgNVBAMTKU1pY3Jvc29mdCBSb290IENlcnRpZmlj -->
+<!-- YXRlIEF1dGhvcml0eSAyMDEwMB4XDTEwMDcwMTIxMzY1NVoXDTI1MDcwMTIxNDY1 -->
+<!-- NVowfDELMAkGA1UEBhMCVVMxEzARBgNVBAgTCldhc2hpbmd0b24xEDAOBgNVBAcT -->
+<!-- B1JlZG1vbmQxHjAcBgNVBAoTFU1pY3Jvc29mdCBDb3Jwb3JhdGlvbjEmMCQGA1UE -->
+<!-- AxMdTWljcm9zb2Z0IFRpbWUtU3RhbXAgUENBIDIwMTAwggEiMA0GCSqGSIb3DQEB -->
+<!-- AQUAA4IBDwAwggEKAoIBAQCpHQ28dxGKOiDs/BOX9fp/aZRrdFQQ1aUKAIKF++18 -->
+<!-- aEssX8XD5WHCdrc+Zitb8BVTJwQxH0EbGpUdzgkTjnxhMFmxMEQP8WCIhFRDDNdN -->
+<!-- uDgIs0Ldk6zWczBXJoKjRQ3Q6vVHgc2/JGAyWGBG8lhHhjKEHnRhZ5FfgVSxz5NM -->
+<!-- ksHEpl3RYRNuKMYa+YaAu99h/EbBJx0kZxJyGiGKr0tkiVBisV39dx898Fd1rL2K -->
+<!-- Qk1AUdEPnAY+Z3/1ZsADlkR+79BL/W7lmsqxqPJ6Kgox8NpOBpG2iAg16HgcsOmZ -->
+<!-- zTznL0S6p/TcZL2kAcEgCZN4zfy8wMlEXV4WnAEFTyJNAgMBAAGjggHmMIIB4jAQ -->
+<!-- BgkrBgEEAYI3FQEEAwIBADAdBgNVHQ4EFgQU1WM6XIoxkPNDe3xGG8UzaFqFbVUw -->
+<!-- GQYJKwYBBAGCNxQCBAweCgBTAHUAYgBDAEEwCwYDVR0PBAQDAgGGMA8GA1UdEwEB -->
+<!-- /wQFMAMBAf8wHwYDVR0jBBgwFoAU1fZWy4/oolxiaNE9lJBb186aGMQwVgYDVR0f -->
+<!-- BE8wTTBLoEmgR4ZFaHR0cDovL2NybC5taWNyb3NvZnQuY29tL3BraS9jcmwvcHJv -->
+<!-- ZHVjdHMvTWljUm9vQ2VyQXV0XzIwMTAtMDYtMjMuY3JsMFoGCCsGAQUFBwEBBE4w -->
+<!-- TDBKBggrBgEFBQcwAoY+aHR0cDovL3d3dy5taWNyb3NvZnQuY29tL3BraS9jZXJ0 -->
+<!-- cy9NaWNSb29DZXJBdXRfMjAxMC0wNi0yMy5jcnQwgaAGA1UdIAEB/wSBlTCBkjCB -->
+<!-- jwYJKwYBBAGCNy4DMIGBMD0GCCsGAQUFBwIBFjFodHRwOi8vd3d3Lm1pY3Jvc29m -->
+<!-- dC5jb20vUEtJL2RvY3MvQ1BTL2RlZmF1bHQuaHRtMEAGCCsGAQUFBwICMDQeMiAd -->
+<!-- AEwAZQBnAGEAbABfAFAAbwBsAGkAYwB5AF8AUwB0AGEAdABlAG0AZQBuAHQALiAd -->
+<!-- MA0GCSqGSIb3DQEBCwUAA4ICAQAH5ohRDeLG4Jg/gXEDPZ2joSFvs+umzPUxvs8F -->
+<!-- 4qn++ldtGTCzwsVmyWrf9efweL3HqJ4l4/m87WtUVwgrUYJEEvu5U4zM9GASinbM -->
+<!-- QEBBm9xcF/9c+V4XNZgkVkt070IQyK+/f8Z/8jd9Wj8c8pl5SpFSAK84Dxf1L3mB -->
+<!-- ZdmptWvkx872ynoAb0swRCQiPM/tA6WWj1kpvLb9BOFwnzJKJ/1Vry/+tuWOM7ti -->
+<!-- X5rbV0Dp8c6ZZpCM/2pif93FSguRJuI57BlKcWOdeyFtw5yjojz6f32WapB4pm3S -->
+<!-- 4Zz5Hfw42JT0xqUKloakvZ4argRCg7i1gJsiOCC1JeVk7Pf0v35jWSUPei45V3ai -->
+<!-- caoGig+JFrphpxHLmtgOR5qAxdDNp9DvfYPw4TtxCd9ddJgiCGHasFAeb73x4QDf -->
+<!-- 5zEHpJM692VHeOj4qEir995yfmFrb3epgcunCaw5u+zGy9iCtHLNHfS4hQEegPsb -->
+<!-- iSpUObJb2sgNVZl6h3M7COaYLeqN4DMuEin1wC9UJyH3yKxO2ii4sanblrKnQqLJ -->
+<!-- zxlBTeCG+SqaoxFmMNO7dDJL32N79ZmKLxvHIa9Zta7cRDyXUHHXodLFVeNp3lfB -->
+<!-- 0d4wwP3M5k37Db9dT+mdHhk4L7zPWAUu7w2gUDXa7wknHNWzfjUeCLraNtvTX4/e -->
+<!-- dIhJEqGCAtIwggI7AgEBMIH8oYHUpIHRMIHOMQswCQYDVQQGEwJVUzETMBEGA1UE -->
+<!-- CBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMHUmVkbW9uZDEeMBwGA1UEChMVTWljcm9z -->
+<!-- b2Z0IENvcnBvcmF0aW9uMSkwJwYDVQQLEyBNaWNyb3NvZnQgT3BlcmF0aW9ucyBQ -->
+<!-- dWVydG8gUmljbzEmMCQGA1UECxMdVGhhbGVzIFRTUyBFU046Rjg3QS1FMzc0LUQ3 -->
+<!-- QjkxJTAjBgNVBAMTHE1pY3Jvc29mdCBUaW1lLVN0YW1wIFNlcnZpY2WiIwoBATAH -->
+<!-- BgUrDgMCGgMVAO0sYB7dSd0qk00qsy3KzBmUAWHvoIGDMIGApH4wfDELMAkGA1UE -->
+<!-- BhMCVVMxEzARBgNVBAgTCldhc2hpbmd0b24xEDAOBgNVBAcTB1JlZG1vbmQxHjAc -->
+<!-- BgNVBAoTFU1pY3Jvc29mdCBDb3Jwb3JhdGlvbjEmMCQGA1UEAxMdTWljcm9zb2Z0 -->
+<!-- IFRpbWUtU3RhbXAgUENBIDIwMTAwDQYJKoZIhvcNAQEFBQACBQDlNRojMCIYDzIw -->
+<!-- MjExMTA5MjAwMjQzWhgPMjAyMTExMTAyMDAyNDNaMHcwPQYKKwYBBAGEWQoEATEv -->
+<!-- MC0wCgIFAOU1GiMCAQAwCgIBAAICKGACAf8wBwIBAAICEW4wCgIFAOU2a6MCAQAw -->
+<!-- NgYKKwYBBAGEWQoEAjEoMCYwDAYKKwYBBAGEWQoDAqAKMAgCAQACAwehIKEKMAgC -->
+<!-- AQACAwGGoDANBgkqhkiG9w0BAQUFAAOBgQAlB4hJsMuF/D77iR+8TDeLr7zV1BYN -->
+<!-- KMmPTqSIblAfnPbad52ixR23cNMVdy45G8VSLB/6sdfowCClXHwrMQQzWrExmdF4 -->
+<!-- K9z2g7cUwv3QlA/86boVa5YH6iof3r3svJuI6pUutfiMu738ovO84Fva3GmL+QuH -->
+<!-- j4ERhQzuhS2M1TGCAw0wggMJAgEBMIGTMHwxCzAJBgNVBAYTAlVTMRMwEQYDVQQI -->
+<!-- EwpXYXNoaW5ndG9uMRAwDgYDVQQHEwdSZWRtb25kMR4wHAYDVQQKExVNaWNyb3Nv -->
+<!-- ZnQgQ29ycG9yYXRpb24xJjAkBgNVBAMTHU1pY3Jvc29mdCBUaW1lLVN0YW1wIFBD -->
+<!-- QSAyMDEwAhMzAAABY4tkxsmFlmV2AAAAAAFjMA0GCWCGSAFlAwQCAQUAoIIBSjAa -->
+<!-- BgkqhkiG9w0BCQMxDQYLKoZIhvcNAQkQAQQwLwYJKoZIhvcNAQkEMSIEIA0DxA82 -->
+<!-- I3xnEo7RQcPNh9926rE6eU/g2+XoVkOyfCzzMIH6BgsqhkiG9w0BCRACLzGB6jCB -->
+<!-- 5zCB5DCBvQQgnFndlx2hY6EopCm4uMvQGASKSwcvUW9ep7NRqxH0I2owgZgwgYCk -->
+<!-- fjB8MQswCQYDVQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMH -->
+<!-- UmVkbW9uZDEeMBwGA1UEChMVTWljcm9zb2Z0IENvcnBvcmF0aW9uMSYwJAYDVQQD -->
+<!-- Ex1NaWNyb3NvZnQgVGltZS1TdGFtcCBQQ0EgMjAxMAITMwAAAWOLZMbJhZZldgAA -->
+<!-- AAABYzAiBCAu7WLJg42z+8YuWAHv13zGplf1EJRuZifT7LmtmqNv0jANBgkqhkiG -->
+<!-- 9w0BAQsFAASCAQAOAwmc0/7/0EoJXl9cA4K0bJG/Rmf/wHJyOxVmLyAbUd/Elawl -->
+<!-- NZlzvleh7XOUGVfW+DuysoOZztWREJ5chAsz3/18hKq2/MskqmyJdHwx94XGzv57 -->
+<!-- ZrPrILuxSuplWLQB9aiPl9Od5eipgxy6Qg7JR/zIX4H0TJvIc9FxPOnTa3xPnYhc -->
+<!-- P0ZfFgHmmT0Zc87rNPZ6NzEvtaHID8vuYQl3ODX4tFZP+hjwBpgek94HpdJ1caKi -->
+<!-- B2lNuhOW8co2HeaAzT5XlpJu0nNKro/+39AdyqDzsicx05uQYIFTbYt9BxN6O6Gg -->
+<!-- S880Ziw7KUPwcQ8Bj60co5ONit4nnrTqZRtM -->
+<!-- SIG # End signature block -->

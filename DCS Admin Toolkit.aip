@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="18.3" version="18.3" Modules="simple" RootPath="." Language="en" Id="{92487E58-5FB7-4F99-BB0B-0821359C9846}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_CURRENT_YEAR" Value="2023" ValueLocId="-"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPCONTACT" Value="elliot.hinton@drewcharterschool.org"/>
+    <ROW Property="ARPHELPLINK" Value="https://drewcharter.incidentiq.org/"/>
+    <ROW Property="ARPHELPTELEPHONE" Value="4046150522"/>
+    <ROW Property="ARPURLINFOABOUT" Value="https://drewcharter.incidentiq.org/"/>
+    <ROW Property="MSIFASTINSTALL" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="Manufacturer" Value="Charles Drew Charter School"/>
+    <ROW Property="MsiLogging" MultiBuildValue="DefaultBuild:vp"/>
+    <ROW Property="ProductCode" Value="1033:{D5AD6CC1-C06D-4794-BFB0-F10879E13A64} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="DCS Admin Toolkit"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{C4195409-D368-476C-8D27-CBBE67A3BD3E}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="AzureAD_Dir" Directory_Parent="Modules_Dir" DefaultDir="AzureAD"/>
+    <ROW Directory="DCSAdminToolkit_1_Dir" Directory_Parent="ProgramMenuFolder" DefaultDir="DCSADM~1|DCS Admin Toolkit"/>
+    <ROW Directory="DCSAdminToolkit_Dir" Directory_Parent="ProgramFiles64Folder" DefaultDir="DCSADM~1|DCS Admin Toolkit"/>
+    <ROW Directory="InstallerHelpFiles_Dir" Directory_Parent="__1_Dir" DefaultDir="INSTAL~1|InstallerHelpFiles"/>
+    <ROW Directory="MSOnline_Dir" Directory_Parent="Modules_Dir" DefaultDir="MSOnline"/>
+    <ROW Directory="Modules_Dir" Directory_Parent="DCSAdminToolkit_Dir" DefaultDir="Modules"/>
+    <ROW Directory="Private_Dir" Directory_Parent="__2_Dir" DefaultDir="Private"/>
+    <ROW Directory="ProgramFiles64Folder" Directory_Parent="TARGETDIR" DefaultDir="PROGRA~1|ProgramFiles64Folder" IsPseudoRoot="1"/>
+    <ROW Directory="ProgramMenuFolder" Directory_Parent="TARGETDIR" DefaultDir="PROGRA~2|ProgramMenuFolder" IsPseudoRoot="1"/>
+    <ROW Directory="Public_Dir" Directory_Parent="__2_Dir" DefaultDir="Public"/>
+    <ROW Directory="PwPoSh_Dir" Directory_Parent="Modules_Dir" DefaultDir="PwPoSh"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="__1_Dir" Directory_Parent="MSOnline_Dir" DefaultDir="11183~1.66|1.1.183.66"/>
+    <ROW Directory="__2_Dir" Directory_Parent="PwPoSh_Dir" DefaultDir="02789~1.560|0.2.789.560"/>
+    <ROW Directory="__Dir" Directory_Parent="AzureAD_Dir" DefaultDir="202~1.116|2.0.2.116"/>
+    <ROW Directory="de_1_Dir" Directory_Parent="__1_Dir" DefaultDir="de"/>
+    <ROW Directory="de_Dir" Directory_Parent="__Dir" DefaultDir="de"/>
+    <ROW Directory="es_1_Dir" Directory_Parent="__1_Dir" DefaultDir="es"/>
+    <ROW Directory="es_Dir" Directory_Parent="__Dir" DefaultDir="es"/>
+    <ROW Directory="fr_1_Dir" Directory_Parent="__1_Dir" DefaultDir="fr"/>
+    <ROW Directory="fr_Dir" Directory_Parent="__Dir" DefaultDir="fr"/>
+    <ROW Directory="it_1_Dir" Directory_Parent="__1_Dir" DefaultDir="it"/>
+    <ROW Directory="it_Dir" Directory_Parent="__Dir" DefaultDir="it"/>
+    <ROW Directory="ja_1_Dir" Directory_Parent="__1_Dir" DefaultDir="ja"/>
+    <ROW Directory="ja_Dir" Directory_Parent="__Dir" DefaultDir="ja"/>
+    <ROW Directory="ko_1_Dir" Directory_Parent="__1_Dir" DefaultDir="ko"/>
+    <ROW Directory="ko_Dir" Directory_Parent="__Dir" DefaultDir="ko"/>
+    <ROW Directory="ru_1_Dir" Directory_Parent="__1_Dir" DefaultDir="ru"/>
+    <ROW Directory="ru_Dir" Directory_Parent="__Dir" DefaultDir="ru"/>
+    <ROW Directory="zhHans_Dir" Directory_Parent="__Dir" DefaultDir="zh-Hans"/>
+    <ROW Directory="zhHant_Dir" Directory_Parent="__Dir" DefaultDir="zh-Hant"/>
+    <ROW Directory="zhhans_Dir" Directory_Parent="__1_Dir" DefaultDir="zh-hans"/>
+    <ROW Directory="zhhant_Dir" Directory_Parent="__1_Dir" DefaultDir="zh-hant"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="APPDIR" ComponentId="{E24E6CC0-1F9C-467F-AAD5-A31149F110A6}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="AdministrationConfig.wixproj" ComponentId="{FFA34431-A46C-4850-A209-09DDC7CF49AE}" Directory_="__1_Dir" Attributes="0" KeyPath="AdministrationConfig.wixproj" Type="0"/>
+    <ROW Component="AzureAD.Format.ps1xml" ComponentId="{3C547E69-C6CB-4E19-B60D-A738F5A29BFE}" Directory_="__Dir" Attributes="0" KeyPath="AzureAD.Format.ps1xml" Type="0"/>
+    <ROW Component="ConvertFromSecurePassword.ps1" ComponentId="{8D9DECC3-650E-43FF-8776-89BA22035BFB}" Directory_="Private_Dir" Attributes="0" KeyPath="ConvertFromSecurePassword.ps1" Type="0"/>
+    <ROW Component="DCSAdminTOOLKIT.exe" ComponentId="{6C012E49-78A2-4AD2-BE68-F813C7177F75}" Directory_="DCSAdminToolkit_Dir" Attributes="0" KeyPath="DCSAdminTOOLKIT.exe"/>
+    <ROW Component="DCSAdminTOOLKIT.lnk" ComponentId="{A23D531A-8D11-4FB8-8868-99F077B1C393}" Directory_="DCSAdminToolkit_1_Dir" Attributes="0" KeyPath="DCSAdminTOOLKIT.lnk" Type="0"/>
+    <ROW Component="GetPassword.ps1" ComponentId="{DF91F9E4-797D-4AF5-93EE-37C7FF86567E}" Directory_="Public_Dir" Attributes="0" KeyPath="GetPassword.ps1" Type="0"/>
+    <ROW Component="LICENSE" ComponentId="{5745A6D8-A40C-4232-AF3F-45F7E9731D79}" Directory_="__2_Dir" Attributes="0" KeyPath="LICENSE" Type="0"/>
+    <ROW Component="Microsoft.Azure.ActiveDirectory.Client.Framework.dll" ComponentId="{EEAB3320-5629-4846-9FB0-AB5E26A684BE}" Directory_="__1_Dir" Attributes="256" KeyPath="Microsoft.Azure.ActiveDirectory.Client.Framework.dll"/>
+    <ROW Component="Microsoft.Azure.ActiveDirectory.GraphClient.dll" ComponentId="{14CACEA3-A9E2-4D1C-9DCF-5C27A5670A32}" Directory_="__1_Dir" Attributes="0" KeyPath="Microsoft.Azure.ActiveDirectory.GraphClient.dll"/>
+    <ROW Component="Microsoft.Data.Edm.dll" ComponentId="{F426DF41-8F44-4843-B867-49846E384413}" Directory_="__Dir" Attributes="0" KeyPath="Microsoft.Data.Edm.dll"/>
+    <ROW Component="Microsoft.Data.Edm.dll_1" ComponentId="{26BAEBD6-CD44-4780-A53B-4F6FD958376E}" Directory_="__1_Dir" Attributes="0" KeyPath="Microsoft.Data.Edm.dll_1"/>
+    <ROW Component="Microsoft.Data.Edm.resources.dll" ComponentId="{ED97559D-1306-4BC1-AFC6-EAD2134782B0}" Directory_="de_Dir" Attributes="0" KeyPath="Microsoft.Data.Edm.resources.dll"/>
+    <ROW Component="Microsoft.Data.Edm.resources.dll_1" ComponentId="{0BE49740-5D5D-422A-93F2-657AF4844A9F}" Directory_="es_Dir" Attributes="0" KeyPath="Microsoft.Data.Edm.resources.dll_1"/>
+    <ROW Component="Microsoft.Data.Edm.resources.dll_2" ComponentId="{AD31221C-99C4-4774-86F1-9EC8CCCCE860}" Directory_="fr_Dir" Attributes="0" KeyPath="Microsoft.Data.Edm.resources.dll_2"/>
+    <ROW Component="Microsoft.Data.Edm.resources.dll_3" ComponentId="{6203D6C6-9694-460E-9758-DF4089808748}" Directory_="it_Dir" Attributes="0" KeyPath="Microsoft.Data.Edm.resources.dll_3"/>
+    <ROW Component="Microsoft.Data.Edm.resources.dll_4" ComponentId="{1448F4B7-6041-4F44-858C-8710C74AFBBF}" Directory_="ja_Dir" Attributes="0" KeyPath="Microsoft.Data.Edm.resources.dll_4"/>
+    <ROW Component="Microsoft.Data.Edm.resources.dll_5" ComponentId="{BAE01FAB-7A9A-46E6-9619-17C674CD3765}" Directory_="ko_Dir" Attributes="0" KeyPath="Microsoft.Data.Edm.resources.dll_5"/>
+    <ROW Component="Microsoft.Data.Edm.resources.dll_6" ComponentId="{05C15A33-4ED8-4715-8F72-B150D1F98F2A}" Directory_="ru_Dir" Attributes="0" KeyPath="Microsoft.Data.Edm.resources.dll_6"/>
+    <ROW Component="Microsoft.Data.Edm.resources.dll_7" ComponentId="{F514B91D-2A7F-4B45-AD97-93820F9751BF}" Directory_="zhHans_Dir" Attributes="0" KeyPath="Microsoft.Data.Edm.resources.dll_7"/>
+    <ROW Component="Microsoft.Data.Edm.resources.dll_8" ComponentId="{FE4FBF89-1CEB-4270-8D6E-61083E36F74B}" Directory_="zhHant_Dir" Attributes="0" KeyPath="Microsoft.Data.Edm.resources.dll_8"/>
+    <ROW Component="Microsoft.Data.Edm.resources.dll_9" ComponentId="{A566A310-4B84-4CB8-94DD-780953E2DA03}" Directory_="__1_Dir" Attributes="0" KeyPath="Microsoft.Data.Edm.resources.dll_9"/>
+    <ROW Component="Microsoft.Data.OData.dll" ComponentId="{5FA26B0B-9A6C-46C6-9CB2-0BD0DF03EEDC}" Directory_="__Dir" Attributes="0" KeyPath="Microsoft.Data.OData.dll"/>
+    <ROW Component="Microsoft.Data.OData.dll_1" ComponentId="{C3245893-CD8F-47C5-8990-0273551E4C18}" Directory_="__1_Dir" Attributes="0" KeyPath="Microsoft.Data.OData.dll_1"/>
+    <ROW Component="Microsoft.Data.OData.resources.dll" ComponentId="{7F837FC7-5CC3-4AD7-A60F-69660FB5D278}" Directory_="de_Dir" Attributes="0" KeyPath="Microsoft.Data.OData.resources.dll"/>
+    <ROW Component="Microsoft.Data.OData.resources.dll_1" ComponentId="{7D563947-A58F-4104-B8B3-36BD153E35F6}" Directory_="es_Dir" Attributes="0" KeyPath="Microsoft.Data.OData.resources.dll_1"/>
+    <ROW Component="Microsoft.Data.OData.resources.dll_2" ComponentId="{C9D6DFB8-BC19-4172-BB98-45ADA8757218}" Directory_="fr_Dir" Attributes="0" KeyPath="Microsoft.Data.OData.resources.dll_2"/>
+    <ROW Component="Microsoft.Data.OData.resources.dll_3" ComponentId="{EA45CE3C-C507-4D40-9DB8-66A59A3EB54D}" Directory_="it_Dir" Attributes="0" KeyPath="Microsoft.Data.OData.resources.dll_3"/>
+    <ROW Component="Microsoft.Data.OData.resources.dll_4" ComponentId="{B153E942-F53E-4E4C-971C-FA054C82C1D0}" Directory_="ja_Dir" Attributes="0" KeyPath="Microsoft.Data.OData.resources.dll_4"/>
+    <ROW Component="Microsoft.Data.OData.resources.dll_5" ComponentId="{912D86C1-44AF-412E-931E-E898E8026DE4}" Directory_="ko_Dir" Attributes="0" KeyPath="Microsoft.Data.OData.resources.dll_5"/>
+    <ROW Component="Microsoft.Data.OData.resources.dll_6" ComponentId="{C7671C36-94B3-463C-A0E0-3234A671DAED}" Directory_="ru_Dir" Attributes="0" KeyPath="Microsoft.Data.OData.resources.dll_6"/>
+    <ROW Component="Microsoft.Data.OData.resources.dll_7" ComponentId="{7CD7F1AE-63AF-4802-AF08-C0CCF8B7CD69}" Directory_="zhHans_Dir" Attributes="0" KeyPath="Microsoft.Data.OData.resources.dll_7"/>
+    <ROW Component="Microsoft.Data.OData.resources.dll_8" ComponentId="{18853A84-9679-4910-8B5E-52057698EE8D}" Directory_="zhHant_Dir" Attributes="0" KeyPath="Microsoft.Data.OData.resources.dll_8"/>
+    <ROW Component="Microsoft.Data.OData.resources.dll_9" ComponentId="{F6FED925-3494-42F8-BDAB-DF45B53C93DB}" Directory_="__1_Dir" Attributes="0" KeyPath="Microsoft.Data.OData.resources.dll_9"/>
+    <ROW Component="Microsoft.Data.Services.Client.dll" ComponentId="{0C892724-7760-4416-B78A-4F6289499B87}" Directory_="__Dir" Attributes="0" KeyPath="Microsoft.Data.Services.Client.dll"/>
+    <ROW Component="Microsoft.Data.Services.Client.dll_1" ComponentId="{E89F5143-ADA9-4742-A26B-6E76D7F735F2}" Directory_="__1_Dir" Attributes="0" KeyPath="Microsoft.Data.Services.Client.dll_1"/>
+    <ROW Component="Microsoft.Data.Services.Client.resources.dll" ComponentId="{CF964BAC-F698-4335-9552-3B080D55C5AD}" Directory_="de_Dir" Attributes="0" KeyPath="Microsoft.Data.Services.Client.resources.dll"/>
+    <ROW Component="Microsoft.Data.Services.Client.resources.dll_1" ComponentId="{B0AEAACA-453F-4653-828E-58BD72AD6E83}" Directory_="es_Dir" Attributes="0" KeyPath="Microsoft.Data.Services.Client.resources.dll_1"/>
+    <ROW Component="Microsoft.Data.Services.Client.resources.dll_2" ComponentId="{E7BE6EFA-3762-4C1B-A9EA-8C74D83AE87A}" Directory_="fr_Dir" Attributes="0" KeyPath="Microsoft.Data.Services.Client.resources.dll_2"/>
+    <ROW Component="Microsoft.Data.Services.Client.resources.dll_3" ComponentId="{946DE767-B05C-4528-AF02-E3DFBC0CBA15}" Directory_="it_Dir" Attributes="0" KeyPath="Microsoft.Data.Services.Client.resources.dll_3"/>
+    <ROW Component="Microsoft.Data.Services.Client.resources.dll_4" ComponentId="{1FB7A115-77DC-420E-8955-2E53A2DDDBBC}" Directory_="ja_Dir" Attributes="0" KeyPath="Microsoft.Data.Services.Client.resources.dll_4"/>
+    <ROW Component="Microsoft.Data.Services.Client.resources.dll_5" ComponentId="{86A14663-83D4-4F9A-BF42-17428D6B2A7F}" Directory_="ko_Dir" Attributes="0" KeyPath="Microsoft.Data.Services.Client.resources.dll_5"/>
+    <ROW Component="Microsoft.Data.Services.Client.resources.dll_6" ComponentId="{A07CF652-CDF7-46F7-97AA-0350935A616D}" Directory_="ru_Dir" Attributes="0" KeyPath="Microsoft.Data.Services.Client.resources.dll_6"/>
+    <ROW Component="Microsoft.Data.Services.Client.resources.dll_7" ComponentId="{7F3DA14B-7A9B-40A1-A791-631B37CD3CAB}" Directory_="zhHans_Dir" Attributes="0" KeyPath="Microsoft.Data.Services.Client.resources.dll_7"/>
+    <ROW Component="Microsoft.Data.Services.Client.resources.dll_8" ComponentId="{C7149087-E387-4EC5-A55A-6FE6FA5CA865}" Directory_="zhHant_Dir" Attributes="0" KeyPath="Microsoft.Data.Services.Client.resources.dll_8"/>
+    <ROW Component="Microsoft.Data.Services.Client.resources.dll_9" ComponentId="{E38BE706-5025-4667-8D9D-0A3AD671722B}" Directory_="__1_Dir" Attributes="0" KeyPath="Microsoft.Data.Services.Client.resources.dll_9"/>
+    <ROW Component="Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll" ComponentId="{131B669F-B5E2-4ECE-86BF-81C452B3B5F9}" Directory_="__Dir" Attributes="0" KeyPath="Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll"/>
+    <ROW Component="Microsoft.IdentityModel.Clients.ActiveDirectory.dll" ComponentId="{3968C64D-C51E-46CE-8873-0623095418BD}" Directory_="__Dir" Attributes="0" KeyPath="Microsoft.IdentityModel.Clients.ActiveDirectory.dll"/>
+    <ROW Component="Microsoft.IdentityModel.Clients.ActiveDirectory.dll_1" ComponentId="{A8475790-7DA9-4973-83C5-0F4FF67153F4}" Directory_="__1_Dir" Attributes="0" KeyPath="Microsoft.IdentityModel.Clients.ActiveDirectory.dll_1"/>
+    <ROW Component="Microsoft.Online.Administration.Automation.PSModule.Resources.dll" ComponentId="{914E0C05-6BD3-422D-9145-C96ADA5B13B9}" Directory_="__1_Dir" Attributes="256" KeyPath="Microsoft.Online.Administration.Automation.PSModule.Resources.dll"/>
+    <ROW Component="Microsoft.Online.Administration.Automation.PSModule.dll" ComponentId="{0256096A-05BE-4B3A-914E-9BFCEB96F571}" Directory_="__1_Dir" Attributes="256" KeyPath="Microsoft.Online.Administration.Automation.PSModule.dll"/>
+    <ROW Component="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml" ComponentId="{4D5E401F-BA65-4B1A-BD2A-2C91401BDFD3}" Directory_="de_1_Dir" Attributes="0" KeyPath="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml" Type="0"/>
+    <ROW Component="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_1" ComponentId="{80E3B589-834D-4553-B1D2-15AB8C670B34}" Directory_="es_1_Dir" Attributes="0" KeyPath="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_1" Type="0"/>
+    <ROW Component="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_2" ComponentId="{6B6EA849-FB10-4850-9226-574B87DE7365}" Directory_="fr_1_Dir" Attributes="0" KeyPath="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_2" Type="0"/>
+    <ROW Component="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_3" ComponentId="{CD370846-3697-4630-A573-790BE161CD2B}" Directory_="InstallerHelpFiles_Dir" Attributes="0" KeyPath="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_3" Type="0"/>
+    <ROW Component="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_4" ComponentId="{81DE0F85-1766-41C0-9DA8-2132A4F97C6D}" Directory_="it_1_Dir" Attributes="0" KeyPath="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_4" Type="0"/>
+    <ROW Component="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_5" ComponentId="{EEB3D0AD-28FE-4F22-9A79-3967E591F04C}" Directory_="ja_1_Dir" Attributes="0" KeyPath="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_5" Type="0"/>
+    <ROW Component="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_6" ComponentId="{88B323F7-1210-4111-9D3B-09E0322C076D}" Directory_="ko_1_Dir" Attributes="0" KeyPath="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_6" Type="0"/>
+    <ROW Component="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_7" ComponentId="{8F5981C2-BAED-46FC-89D4-2DE2CE077D89}" Directory_="ru_1_Dir" Attributes="0" KeyPath="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_8" Type="0"/>
+    <ROW Component="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_8" ComponentId="{A97EC994-D29D-4F4C-80EA-60688BE5F2FC}" Directory_="zhhans_Dir" Attributes="0" KeyPath="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_9" Type="0"/>
+    <ROW Component="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_9" ComponentId="{5E46189D-3F73-47AA-A657-3D0AA766FC91}" Directory_="zhhant_Dir" Attributes="0" KeyPath="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_10" Type="0"/>
+    <ROW Component="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll" ComponentId="{FC35289C-847D-416E-B87D-942C7D92D3EB}" Directory_="de_1_Dir" Attributes="256" KeyPath="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll"/>
+    <ROW Component="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_1" ComponentId="{4727E207-C128-452E-BDA6-125CEE46BF18}" Directory_="es_1_Dir" Attributes="256" KeyPath="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_1"/>
+    <ROW Component="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_10" ComponentId="{CC70A564-D835-442A-85D9-B63C72A73C38}" Directory_="zhhant_Dir" Attributes="256" KeyPath="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_10"/>
+    <ROW Component="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_2" ComponentId="{4AE235A2-9715-43CC-933F-70362EBE1B14}" Directory_="fr_1_Dir" Attributes="256" KeyPath="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_2"/>
+    <ROW Component="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_3" ComponentId="{CDD016C3-5302-41E7-A903-5CAAE5319528}" Directory_="InstallerHelpFiles_Dir" Attributes="256" KeyPath="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_3"/>
+    <ROW Component="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_4" ComponentId="{774F71D6-6154-4C34-9F3D-0D01316CC867}" Directory_="it_1_Dir" Attributes="256" KeyPath="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_4"/>
+    <ROW Component="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_5" ComponentId="{C10F309F-F552-447A-8FD1-CE6484CB95D9}" Directory_="ja_1_Dir" Attributes="256" KeyPath="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_5"/>
+    <ROW Component="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_6" ComponentId="{F8276574-C956-4873-8DDA-25EAFF15B1E3}" Directory_="ko_1_Dir" Attributes="256" KeyPath="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_6"/>
+    <ROW Component="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_7" ComponentId="{DA795057-5505-4FEF-A361-CD16D8473323}" Directory_="__1_Dir" Attributes="256" KeyPath="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_7"/>
+    <ROW Component="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_8" ComponentId="{50E8AAB7-984A-47F3-BC07-CC5692816BCA}" Directory_="ru_1_Dir" Attributes="256" KeyPath="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_8"/>
+    <ROW Component="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_9" ComponentId="{A8135C12-4FD0-4B6E-801F-1B5D2F4C8E71}" Directory_="zhhans_Dir" Attributes="256" KeyPath="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_9"/>
+    <ROW Component="Microsoft.Online.Identity.Federation.PowerShell.dll" ComponentId="{5042E760-344A-4E01-957F-95DD27A3A332}" Directory_="de_1_Dir" Attributes="256" KeyPath="Microsoft.Online.Identity.Federation.PowerShell.dll"/>
+    <ROW Component="Microsoft.Online.Identity.Federation.PowerShell.dll_1" ComponentId="{FE73F62E-DB3C-407B-8874-F1194F7F0491}" Directory_="es_1_Dir" Attributes="256" KeyPath="Microsoft.Online.Identity.Federation.PowerShell.dll_1"/>
+    <ROW Component="Microsoft.Online.Identity.Federation.PowerShell.dll_10" ComponentId="{AFED9B23-7E49-428D-8EE8-FA654154DD09}" Directory_="zhhant_Dir" Attributes="256" KeyPath="Microsoft.Online.Identity.Federation.PowerShell.dll_10"/>
+    <ROW Component="Microsoft.Online.Identity.Federation.PowerShell.dll_2" ComponentId="{BA16F927-12C0-40E3-9407-2BA3097DC99C}" Directory_="fr_1_Dir" Attributes="256" KeyPath="Microsoft.Online.Identity.Federation.PowerShell.dll_2"/>
+    <ROW Component="Microsoft.Online.Identity.Federation.PowerShell.dll_3" ComponentId="{EB3466C5-5ED4-4F12-80DA-5C407C9B6A93}" Directory_="InstallerHelpFiles_Dir" Attributes="256" KeyPath="Microsoft.Online.Identity.Federation.PowerShell.dll_3"/>
+    <ROW Component="Microsoft.Online.Identity.Federation.PowerShell.dll_4" ComponentId="{1355B4F5-54A6-4B29-A9A5-EB76A5DE36EA}" Directory_="it_1_Dir" Attributes="256" KeyPath="Microsoft.Online.Identity.Federation.PowerShell.dll_4"/>
+    <ROW Component="Microsoft.Online.Identity.Federation.PowerShell.dll_5" ComponentId="{55A55E5D-DF3C-4C8A-9869-D644F6D85D6C}" Directory_="ja_1_Dir" Attributes="256" KeyPath="Microsoft.Online.Identity.Federation.PowerShell.dll_5"/>
+    <ROW Component="Microsoft.Online.Identity.Federation.PowerShell.dll_6" ComponentId="{AA2A4878-6A83-450E-8423-C1C679782852}" Directory_="ko_1_Dir" Attributes="256" KeyPath="Microsoft.Online.Identity.Federation.PowerShell.dll_6"/>
+    <ROW Component="Microsoft.Online.Identity.Federation.PowerShell.dll_7" ComponentId="{F2F805D7-C294-47D5-82B6-64F7D5378D84}" Directory_="__1_Dir" Attributes="256" KeyPath="Microsoft.Online.Identity.Federation.PowerShell.dll_7"/>
+    <ROW Component="Microsoft.Online.Identity.Federation.PowerShell.dll_8" ComponentId="{FA9C2201-C4CC-4E4F-A6EF-29CF3CB70980}" Directory_="ru_1_Dir" Attributes="256" KeyPath="Microsoft.Online.Identity.Federation.PowerShell.dll_8"/>
+    <ROW Component="Microsoft.Online.Identity.Federation.PowerShell.dll_9" ComponentId="{0E419CDD-EC5D-48BB-B80B-A2355E906BD9}" Directory_="zhhans_Dir" Attributes="256" KeyPath="Microsoft.Online.Identity.Federation.PowerShell.dll_9"/>
+    <ROW Component="Microsoft.Open.Azure.AD.CommonLibrary.Resources.dll" ComponentId="{F5A8DACF-8742-447A-A179-BDDC0C419B90}" Directory_="__Dir" Attributes="256" KeyPath="Microsoft.Open.Azure.AD.CommonLibrary.Resources.dll"/>
+    <ROW Component="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll" ComponentId="{31768594-4987-465D-843F-2B3E4BF65728}" Directory_="de_Dir" Attributes="0" KeyPath="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll"/>
+    <ROW Component="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll_1" ComponentId="{E95162D7-B9CE-49E4-9C41-06DCD462C4F6}" Directory_="es_Dir" Attributes="0" KeyPath="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll_1"/>
+    <ROW Component="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll_2" ComponentId="{7F83F1F1-0E93-4DB2-B2EB-928909C2CAE7}" Directory_="fr_Dir" Attributes="0" KeyPath="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll_2"/>
+    <ROW Component="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll_3" ComponentId="{5D70B75F-3FFE-4C2F-8662-9E3B63736247}" Directory_="it_Dir" Attributes="0" KeyPath="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll_3"/>
+    <ROW Component="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll_4" ComponentId="{925CD319-0353-4F03-834F-9F4A4D401F96}" Directory_="ja_Dir" Attributes="0" KeyPath="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll_4"/>
+    <ROW Component="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll_5" ComponentId="{BC74B82D-4C2B-44AD-AD0A-A21C5D2B1028}" Directory_="zhHans_Dir" Attributes="0" KeyPath="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll_5"/>
+    <ROW Component="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll_6" ComponentId="{0D63F298-FEEF-42D8-A028-0165710207B1}" Directory_="zhHant_Dir" Attributes="0" KeyPath="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll_6"/>
+    <ROW Component="Microsoft.Open.Azure.AD.CommonLibrary.dll" ComponentId="{0F3FAC4B-A9A7-4D8E-9911-9F9D23C71AD6}" Directory_="__Dir" Attributes="256" KeyPath="Microsoft.Open.Azure.AD.CommonLibrary.dll"/>
+    <ROW Component="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml" ComponentId="{BFB20E2F-768D-45C4-8348-14C1B80AC149}" Directory_="de_Dir" Attributes="0" KeyPath="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml" Type="0"/>
+    <ROW Component="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_1" ComponentId="{8360E677-EE54-4C06-A771-29DE1E599716}" Directory_="es_Dir" Attributes="0" KeyPath="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_1" Type="0"/>
+    <ROW Component="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_2" ComponentId="{41DD73C5-E245-420C-AD09-F09C6E4CE12E}" Directory_="fr_Dir" Attributes="0" KeyPath="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_2" Type="0"/>
+    <ROW Component="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_3" ComponentId="{BFA7B66E-2AF5-4FFA-9F98-14E7116A16ED}" Directory_="it_Dir" Attributes="0" KeyPath="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_3" Type="0"/>
+    <ROW Component="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_4" ComponentId="{D23BBE4F-4D97-4CF0-AE1E-2B3D18D420F9}" Directory_="ja_Dir" Attributes="0" KeyPath="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_4" Type="0"/>
+    <ROW Component="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_5" ComponentId="{F652A3C2-A0FA-4F18-B7A3-00C511AE77DE}" Directory_="zhHans_Dir" Attributes="0" KeyPath="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_6" Type="0"/>
+    <ROW Component="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_6" ComponentId="{478EC212-6E7E-42DF-ABDE-0E0C9C70A654}" Directory_="zhHant_Dir" Attributes="0" KeyPath="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_7" Type="0"/>
+    <ROW Component="Microsoft.Open.AzureAD16.Graph.Client.dll" ComponentId="{7C07AB79-C0C2-449B-9CAE-A8C51AF492A0}" Directory_="__Dir" Attributes="256" KeyPath="Microsoft.Open.AzureAD16.Graph.Client.dll"/>
+    <ROW Component="Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll" ComponentId="{470A5480-0277-4540-B97E-E8C647070260}" Directory_="__Dir" Attributes="256" KeyPath="Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll"/>
+    <ROW Component="Microsoft.Open.AzureAD16.Graph.PowerShell.dll" ComponentId="{1DCF185A-BF1A-4F79-A132-BFD82AD8D21A}" Directory_="__Dir" Attributes="256" KeyPath="Microsoft.Open.AzureAD16.Graph.PowerShell.dll"/>
+    <ROW Component="Microsoft.Open.MS.GraphV10.Client.dll" ComponentId="{F33D37B7-9767-4C34-8C8E-AD6080282007}" Directory_="__Dir" Attributes="256" KeyPath="Microsoft.Open.MS.GraphV10.Client.dll"/>
+    <ROW Component="Microsoft.Open.MS.GraphV10.PowerShell.Custom.dll" ComponentId="{8687289C-E86D-4D54-A661-7E9540D31F65}" Directory_="__Dir" Attributes="256" KeyPath="Microsoft.Open.MS.GraphV10.PowerShell.Custom.dll"/>
+    <ROW Component="Microsoft.Open.MS.GraphV10.PowerShell.dll" ComponentId="{DF54086B-D795-4E34-8297-21EC28B7C7EC}" Directory_="__Dir" Attributes="256" KeyPath="Microsoft.Open.MS.GraphV10.PowerShell.dll"/>
+    <ROW Component="Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll" ComponentId="{F327544F-4560-424C-868B-CCF63645CC0C}" Directory_="__Dir" Attributes="0" KeyPath="Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll"/>
+    <ROW Component="Newtonsoft.Json.dll" ComponentId="{D260875A-4AAC-4A3A-B0F3-69833BFFEBDB}" Directory_="__Dir" Attributes="0" KeyPath="Newtonsoft.Json.dll"/>
+    <ROW Component="Newtonsoft.Json.dll_1" ComponentId="{2B3D70CC-63EE-4C92-80DD-05F47C11A93D}" Directory_="__1_Dir" Attributes="0" KeyPath="Newtonsoft.Json.dll_1"/>
+    <ROW Component="ProductInformation" ComponentId="{1BD37C1F-75AF-4C9E-9DEF-8892ADAFDED0}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="RestSharp.dll" ComponentId="{7E86715D-2C1B-4236-BA4F-14518BF36278}" Directory_="__Dir" Attributes="0" KeyPath="RestSharp.dll"/>
+    <ROW Component="RestSharp.dll_1" ComponentId="{E426D3CD-6622-46FC-9FF8-D487AE5B2557}" Directory_="__1_Dir" Attributes="0" KeyPath="RestSharp.dll_1"/>
+    <ROW Component="Rhino.Mocks.dll" ComponentId="{72B64F61-9348-44B3-9B03-6B953B6D2B73}" Directory_="__Dir" Attributes="0" KeyPath="Rhino.Mocks.dll"/>
+    <ROW Component="System.IdentityModel.Tokens.Jwt.dll" ComponentId="{2C267ACA-903E-4D1B-84C4-D71DD68833A3}" Directory_="__Dir" Attributes="0" KeyPath="System.IdentityModel.Tokens.Jwt.dll"/>
+    <ROW Component="System.IdentityModel.Tokens.Jwt.dll_1" ComponentId="{6A2AAAC8-A4AD-4AD9-85E4-CB032C458650}" Directory_="__1_Dir" Attributes="0" KeyPath="System.IdentityModel.Tokens.Jwt.dll_1"/>
+    <ROW Component="System.Management.Automation.dll" ComponentId="{F83BE93C-140A-4FBC-868A-CB9BCB45B8F0}" Directory_="__Dir" Attributes="0" KeyPath="System.Management.Automation.dll"/>
+    <ROW Component="System.Management.Automation.dll_1" ComponentId="{9C0150AF-52D9-4CE7-AC6F-948F11229AC6}" Directory_="__1_Dir" Attributes="0" KeyPath="System.Management.Automation.dll_1"/>
+    <ROW Component="System.Spatial.dll" ComponentId="{F933513E-6C4F-44C8-AECA-FDC94A386713}" Directory_="__Dir" Attributes="0" KeyPath="System.Spatial.dll"/>
+    <ROW Component="System.Spatial.dll_1" ComponentId="{8056B7DE-EA22-4102-A7A4-214087E2D859}" Directory_="__1_Dir" Attributes="0" KeyPath="System.Spatial.dll_1"/>
+    <ROW Component="System.Spatial.resources.dll" ComponentId="{8136F42E-3862-4DC6-BE2A-AF9E29225043}" Directory_="de_Dir" Attributes="0" KeyPath="System.Spatial.resources.dll"/>
+    <ROW Component="System.Spatial.resources.dll_1" ComponentId="{2F03A223-AF02-4C24-8420-A6DBCD22D236}" Directory_="es_Dir" Attributes="0" KeyPath="System.Spatial.resources.dll_1"/>
+    <ROW Component="System.Spatial.resources.dll_2" ComponentId="{77526706-A719-4D6E-A6BD-85841493EF5E}" Directory_="fr_Dir" Attributes="0" KeyPath="System.Spatial.resources.dll_2"/>
+    <ROW Component="System.Spatial.resources.dll_3" ComponentId="{DE352B81-1040-4885-8A70-16C92B3B1C72}" Directory_="it_Dir" Attributes="0" KeyPath="System.Spatial.resources.dll_3"/>
+    <ROW Component="System.Spatial.resources.dll_4" ComponentId="{BE40C6C2-B0D6-4739-9C30-5F8A1CDDD4A7}" Directory_="ja_Dir" Attributes="0" KeyPath="System.Spatial.resources.dll_4"/>
+    <ROW Component="System.Spatial.resources.dll_5" ComponentId="{6D7E3466-F463-4C79-BAA0-1760A7CE39AD}" Directory_="ko_Dir" Attributes="0" KeyPath="System.Spatial.resources.dll_5"/>
+    <ROW Component="System.Spatial.resources.dll_6" ComponentId="{73A99C52-95BB-4DA8-AA5A-D0BDFC5E5ED7}" Directory_="ru_Dir" Attributes="0" KeyPath="System.Spatial.resources.dll_6"/>
+    <ROW Component="System.Spatial.resources.dll_7" ComponentId="{ECCE189D-6941-4AF8-8DD4-459F00278560}" Directory_="zhHans_Dir" Attributes="0" KeyPath="System.Spatial.resources.dll_7"/>
+    <ROW Component="System.Spatial.resources.dll_8" ComponentId="{1E0C18C7-8C1D-49EB-B07A-477C36C28EBF}" Directory_="zhHant_Dir" Attributes="0" KeyPath="System.Spatial.resources.dll_8"/>
+    <ROW Component="System.Spatial.resources.dll_9" ComponentId="{11E126BA-3C4C-4892-9878-AB93F25E2349}" Directory_="__1_Dir" Attributes="0" KeyPath="System.Spatial.resources.dll_9"/>
+    <ROW Component="changelog.txt" ComponentId="{1A1D0C3E-B6E0-487A-A367-3FFFBE19846A}" Directory_="DCSAdminToolkit_Dir" Attributes="0" KeyPath="changelog.txt" Type="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="changelog.txt" Component_="changelog.txt" FileName="CHANGE~1.TXT|changelog.txt" Attributes="0" SourcePath="changelog.txt" SelfReg="false"/>
+    <ROW File="config.json" Component_="changelog.txt" FileName="CONFIG~1.JSO|config.json" Attributes="0" SourcePath="config.json" SelfReg="false"/>
+    <ROW File="DCSAdminTOOLKIT.exe" Component_="DCSAdminTOOLKIT.exe" FileName="DCSADM~1.EXE|DCSAdminTOOLKIT.exe" Attributes="0" SourcePath="DCSAdminTOOLKIT.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="Drew_Assist_Icon.ico" Component_="changelog.txt" FileName="DREW_A~1.ICO|Drew_Assist_Icon.ico" Attributes="0" SourcePath="Drew_Assist_Icon.ico" SelfReg="false"/>
+    <ROW File="DrewTechnologyTool.ps1" Component_="changelog.txt" FileName="DREWTE~1.PS1|DrewTechnologyTool.ps1" Attributes="0" SourcePath="DrewTechnologyTool.ps1" SelfReg="false"/>
+    <ROW File="DrewTechnologyToolG1ZMO_DRAG0N_PC.ps1" Component_="changelog.txt" FileName="DREWTE~2.PS1|DrewTechnologyTool-G1ZMO_DRAG0N_PC.ps1" Attributes="0" SourcePath="DrewTechnologyTool-G1ZMO_DRAG0N_PC.ps1" SelfReg="false"/>
+    <ROW File="Notes.txt" Component_="changelog.txt" FileName="Notes.txt" Attributes="0" SourcePath="Notes.txt" SelfReg="false"/>
+    <ROW File="AzureAD.Format.ps1xml" Component_="AzureAD.Format.ps1xml" FileName="AZUREA~1.PS1|AzureAD.Format.ps1xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\AzureAD.Format.ps1xml" SelfReg="false"/>
+    <ROW File="AzureAD.psd1" Component_="AzureAD.Format.ps1xml" FileName="AZUREA~1.PSD|AzureAD.psd1" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\AzureAD.psd1" SelfReg="false"/>
+    <ROW File="Microsoft.Data.Edm.resources.dll" Component_="Microsoft.Data.Edm.resources.dll" FileName="MICROS~1.DLL|Microsoft.Data.Edm.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\de\Microsoft.Data.Edm.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.OData.resources.dll" Component_="Microsoft.Data.OData.resources.dll" FileName="MICROS~2.DLL|Microsoft.Data.OData.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\de\Microsoft.Data.OData.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.Services.Client.resources.dll" Component_="Microsoft.Data.Services.Client.resources.dll" FileName="MICROS~3.DLL|Microsoft.Data.Services.Client.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\de\Microsoft.Data.Services.Client.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml" FileName="MICROS~1.XML|Microsoft.Open.Azure.AD.CommonLibrary.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\de\Microsoft.Open.Azure.AD.CommonLibrary.dll-Help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll" Component_="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll" FileName="MICROS~4.DLL|Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\de\Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dllHelp.xml" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml" FileName="MICROS~2.XML|Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\de\Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Open.AzureAD16.Graph.PowerShell.dllHelp.xml" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml" FileName="MICROS~3.XML|Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\de\Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Open.MS.GraphV10.PowerShell.dllHelp.xml" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml" FileName="MICROS~4.XML|Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\de\Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml" SelfReg="false"/>
+    <ROW File="System.Spatial.resources.dll" Component_="System.Spatial.resources.dll" FileName="SYSTEM~1.DLL|System.Spatial.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\de\System.Spatial.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.Edm.resources.dll_1" Component_="Microsoft.Data.Edm.resources.dll_1" FileName="MICROS~1.DLL|Microsoft.Data.Edm.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\es\Microsoft.Data.Edm.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.OData.resources.dll_1" Component_="Microsoft.Data.OData.resources.dll_1" FileName="MICROS~2.DLL|Microsoft.Data.OData.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\es\Microsoft.Data.OData.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.Services.Client.resources.dll_1" Component_="Microsoft.Data.Services.Client.resources.dll_1" FileName="MICROS~3.DLL|Microsoft.Data.Services.Client.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\es\Microsoft.Data.Services.Client.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_1" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_1" FileName="MICROS~1.XML|Microsoft.Open.Azure.AD.CommonLibrary.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\es\Microsoft.Open.Azure.AD.CommonLibrary.dll-Help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll_1" Component_="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll_1" FileName="MICROS~4.DLL|Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\es\Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dllHelp.xml_1" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_1" FileName="MICROS~2.XML|Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\es\Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Open.AzureAD16.Graph.PowerShell.dllHelp.xml_1" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_1" FileName="MICROS~3.XML|Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\es\Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Open.MS.GraphV10.PowerShell.dllHelp.xml_1" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_1" FileName="MICROS~4.XML|Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\es\Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml" SelfReg="false"/>
+    <ROW File="System.Spatial.resources.dll_1" Component_="System.Spatial.resources.dll_1" FileName="SYSTEM~1.DLL|System.Spatial.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\es\System.Spatial.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.Edm.resources.dll_2" Component_="Microsoft.Data.Edm.resources.dll_2" FileName="MICROS~1.DLL|Microsoft.Data.Edm.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\fr\Microsoft.Data.Edm.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.OData.resources.dll_2" Component_="Microsoft.Data.OData.resources.dll_2" FileName="MICROS~2.DLL|Microsoft.Data.OData.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\fr\Microsoft.Data.OData.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.Services.Client.resources.dll_2" Component_="Microsoft.Data.Services.Client.resources.dll_2" FileName="MICROS~3.DLL|Microsoft.Data.Services.Client.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\fr\Microsoft.Data.Services.Client.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_2" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_2" FileName="MICROS~1.XML|Microsoft.Open.Azure.AD.CommonLibrary.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\fr\Microsoft.Open.Azure.AD.CommonLibrary.dll-Help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll_2" Component_="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll_2" FileName="MICROS~4.DLL|Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\fr\Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dllHelp.xml_2" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_2" FileName="MICROS~2.XML|Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\fr\Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Open.AzureAD16.Graph.PowerShell.dllHelp.xml_2" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_2" FileName="MICROS~3.XML|Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\fr\Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Open.MS.GraphV10.PowerShell.dllHelp.xml_2" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_2" FileName="MICROS~4.XML|Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\fr\Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml" SelfReg="false"/>
+    <ROW File="System.Spatial.resources.dll_2" Component_="System.Spatial.resources.dll_2" FileName="SYSTEM~1.DLL|System.Spatial.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\fr\System.Spatial.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.Edm.resources.dll_3" Component_="Microsoft.Data.Edm.resources.dll_3" FileName="MICROS~1.DLL|Microsoft.Data.Edm.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\it\Microsoft.Data.Edm.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.OData.resources.dll_3" Component_="Microsoft.Data.OData.resources.dll_3" FileName="MICROS~2.DLL|Microsoft.Data.OData.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\it\Microsoft.Data.OData.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.Services.Client.resources.dll_3" Component_="Microsoft.Data.Services.Client.resources.dll_3" FileName="MICROS~3.DLL|Microsoft.Data.Services.Client.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\it\Microsoft.Data.Services.Client.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_3" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_3" FileName="MICROS~1.XML|Microsoft.Open.Azure.AD.CommonLibrary.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\it\Microsoft.Open.Azure.AD.CommonLibrary.dll-Help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll_3" Component_="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll_3" FileName="MICROS~4.DLL|Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\it\Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dllHelp.xml_3" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_3" FileName="MICROS~2.XML|Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\it\Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Open.AzureAD16.Graph.PowerShell.dllHelp.xml_3" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_3" FileName="MICROS~3.XML|Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\it\Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Open.MS.GraphV10.PowerShell.dllHelp.xml_3" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_3" FileName="MICROS~4.XML|Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\it\Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml" SelfReg="false"/>
+    <ROW File="System.Spatial.resources.dll_3" Component_="System.Spatial.resources.dll_3" FileName="SYSTEM~1.DLL|System.Spatial.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\it\System.Spatial.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.Edm.resources.dll_4" Component_="Microsoft.Data.Edm.resources.dll_4" FileName="MICROS~1.DLL|Microsoft.Data.Edm.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\ja\Microsoft.Data.Edm.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.OData.resources.dll_4" Component_="Microsoft.Data.OData.resources.dll_4" FileName="MICROS~2.DLL|Microsoft.Data.OData.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\ja\Microsoft.Data.OData.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.Services.Client.resources.dll_4" Component_="Microsoft.Data.Services.Client.resources.dll_4" FileName="MICROS~3.DLL|Microsoft.Data.Services.Client.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\ja\Microsoft.Data.Services.Client.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_4" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_4" FileName="MICROS~1.XML|Microsoft.Open.Azure.AD.CommonLibrary.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\ja\Microsoft.Open.Azure.AD.CommonLibrary.dll-Help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll_4" Component_="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll_4" FileName="MICROS~4.DLL|Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\ja\Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dllHelp.xml_4" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_4" FileName="MICROS~2.XML|Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\ja\Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Open.AzureAD16.Graph.PowerShell.dllHelp.xml_4" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_4" FileName="MICROS~3.XML|Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\ja\Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Open.MS.GraphV10.PowerShell.dllHelp.xml_4" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_4" FileName="MICROS~4.XML|Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\ja\Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml" SelfReg="false"/>
+    <ROW File="System.Spatial.resources.dll_4" Component_="System.Spatial.resources.dll_4" FileName="SYSTEM~1.DLL|System.Spatial.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\ja\System.Spatial.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.Edm.resources.dll_5" Component_="Microsoft.Data.Edm.resources.dll_5" FileName="MICROS~1.DLL|Microsoft.Data.Edm.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\ko\Microsoft.Data.Edm.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.OData.resources.dll_5" Component_="Microsoft.Data.OData.resources.dll_5" FileName="MICROS~2.DLL|Microsoft.Data.OData.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\ko\Microsoft.Data.OData.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.Services.Client.resources.dll_5" Component_="Microsoft.Data.Services.Client.resources.dll_5" FileName="MICROS~3.DLL|Microsoft.Data.Services.Client.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\ko\Microsoft.Data.Services.Client.resources.dll" SelfReg="false"/>
+    <ROW File="System.Spatial.resources.dll_5" Component_="System.Spatial.resources.dll_5" FileName="SYSTEM~1.DLL|System.Spatial.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\ko\System.Spatial.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.Edm.dll" Component_="Microsoft.Data.Edm.dll" FileName="MICROS~1.DLL|Microsoft.Data.Edm.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.Data.Edm.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.Edm.xml" Component_="AzureAD.Format.ps1xml" FileName="MICROS~1.XML|Microsoft.Data.Edm.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.Data.Edm.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Data.OData.dll" Component_="Microsoft.Data.OData.dll" FileName="MICROS~2.DLL|Microsoft.Data.OData.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.Data.OData.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.OData.xml" Component_="AzureAD.Format.ps1xml" FileName="MICROS~2.XML|Microsoft.Data.OData.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.Data.OData.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Data.Services.Client.dll" Component_="Microsoft.Data.Services.Client.dll" FileName="MICROS~3.DLL|Microsoft.Data.Services.Client.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.Data.Services.Client.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.Services.Client.xml" Component_="AzureAD.Format.ps1xml" FileName="MICROS~3.XML|Microsoft.Data.Services.Client.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.Data.Services.Client.xml" SelfReg="false"/>
+    <ROW File="Microsoft.IdentityModel.Clients.ActiveDirectory.dll" Component_="Microsoft.IdentityModel.Clients.ActiveDirectory.dll" FileName="MICROS~4.DLL|Microsoft.IdentityModel.Clients.ActiveDirectory.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.IdentityModel.Clients.ActiveDirectory.dll" SelfReg="false"/>
+    <ROW File="Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll" Component_="Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll" FileName="MICROS~5.DLL|Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll" SelfReg="false"/>
+    <ROW File="Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.xml" Component_="AzureAD.Format.ps1xml" FileName="MICROS~4.XML|Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.xml" SelfReg="false"/>
+    <ROW File="Microsoft.IdentityModel.Clients.ActiveDirectory.xml" Component_="AzureAD.Format.ps1xml" FileName="MICROS~5.XML|Microsoft.IdentityModel.Clients.ActiveDirectory.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.IdentityModel.Clients.ActiveDirectory.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Open.Azure.AD.CommonLibrary.dll" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dll" FileName="MICROS~6.DLL|Microsoft.Open.Azure.AD.CommonLibrary.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.Open.Azure.AD.CommonLibrary.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_5" Component_="AzureAD.Format.ps1xml" FileName="MICROS~6.XML|Microsoft.Open.Azure.AD.CommonLibrary.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.Open.Azure.AD.CommonLibrary.dll-Help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Open.Azure.AD.CommonLibrary.pdb" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dll" FileName="MICROS~1.PDB|Microsoft.Open.Azure.AD.CommonLibrary.pdb" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.Open.Azure.AD.CommonLibrary.pdb" SelfReg="false"/>
+    <ROW File="Microsoft.Open.Azure.AD.CommonLibrary.Resources.dll" Component_="Microsoft.Open.Azure.AD.CommonLibrary.Resources.dll" FileName="MICROS~7.DLL|Microsoft.Open.Azure.AD.CommonLibrary.Resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.Open.Azure.AD.CommonLibrary.Resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Open.Azure.AD.CommonLibrary.Resources.pdb" Component_="Microsoft.Open.Azure.AD.CommonLibrary.Resources.dll" FileName="MICROS~2.PDB|Microsoft.Open.Azure.AD.CommonLibrary.Resources.pdb" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.Open.Azure.AD.CommonLibrary.Resources.pdb" SelfReg="false"/>
+    <ROW File="Microsoft.Open.AzureAD16.Graph.Client.dll" Component_="Microsoft.Open.AzureAD16.Graph.Client.dll" FileName="MICROS~8.DLL|Microsoft.Open.AzureAD16.Graph.Client.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.Open.AzureAD16.Graph.Client.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Open.AzureAD16.Graph.Client.pdb" Component_="Microsoft.Open.AzureAD16.Graph.Client.dll" FileName="MICROS~3.PDB|Microsoft.Open.AzureAD16.Graph.Client.pdb" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.Open.AzureAD16.Graph.Client.pdb" SelfReg="false"/>
+    <ROW File="Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll" Component_="Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll" FileName="MICROS~9.DLL|Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dllHelp.xml_5" Component_="AzureAD.Format.ps1xml" FileName="MICROS~7.XML|Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.pdb" Component_="Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll" FileName="MICROS~4.PDB|Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.pdb" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.pdb" SelfReg="false"/>
+    <ROW File="Microsoft.Open.AzureAD16.Graph.PowerShell.dll" Component_="Microsoft.Open.AzureAD16.Graph.PowerShell.dll" FileName="MICRO~10.DLL|Microsoft.Open.AzureAD16.Graph.PowerShell.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.Open.AzureAD16.Graph.PowerShell.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Open.AzureAD16.Graph.PowerShell.dllHelp.xml_5" Component_="AzureAD.Format.ps1xml" FileName="MICROS~8.XML|Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Open.AzureAD16.Graph.PowerShell.pdb" Component_="Microsoft.Open.AzureAD16.Graph.PowerShell.dll" FileName="MICROS~5.PDB|Microsoft.Open.AzureAD16.Graph.PowerShell.pdb" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.Open.AzureAD16.Graph.PowerShell.pdb" SelfReg="false"/>
+    <ROW File="Microsoft.Open.MS.GraphV10.Client.dll" Component_="Microsoft.Open.MS.GraphV10.Client.dll" FileName="MICRO~11.DLL|Microsoft.Open.MS.GraphV10.Client.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.Open.MS.GraphV10.Client.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Open.MS.GraphV10.Client.pdb" Component_="Microsoft.Open.MS.GraphV10.Client.dll" FileName="MICROS~6.PDB|Microsoft.Open.MS.GraphV10.Client.pdb" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.Open.MS.GraphV10.Client.pdb" SelfReg="false"/>
+    <ROW File="Microsoft.Open.MS.GraphV10.PowerShell.Custom.dll" Component_="Microsoft.Open.MS.GraphV10.PowerShell.Custom.dll" FileName="MICRO~12.DLL|Microsoft.Open.MS.GraphV10.PowerShell.Custom.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.Open.MS.GraphV10.PowerShell.Custom.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Open.MS.GraphV10.PowerShell.Custom.dllHelp.xml" Component_="AzureAD.Format.ps1xml" FileName="MICROS~9.XML|Microsoft.Open.MS.GraphV10.PowerShell.Custom.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.Open.MS.GraphV10.PowerShell.Custom.dll-Help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Open.MS.GraphV10.PowerShell.Custom.pdb" Component_="Microsoft.Open.MS.GraphV10.PowerShell.Custom.dll" FileName="MICROS~7.PDB|Microsoft.Open.MS.GraphV10.PowerShell.Custom.pdb" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.Open.MS.GraphV10.PowerShell.Custom.pdb" SelfReg="false"/>
+    <ROW File="Microsoft.Open.MS.GraphV10.PowerShell.dll" Component_="Microsoft.Open.MS.GraphV10.PowerShell.dll" FileName="MICRO~13.DLL|Microsoft.Open.MS.GraphV10.PowerShell.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.Open.MS.GraphV10.PowerShell.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Open.MS.GraphV10.PowerShell.dllHelp.xml_5" Component_="AzureAD.Format.ps1xml" FileName="MICRO~10.XML|Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Open.MS.GraphV10.PowerShell.pdb" Component_="Microsoft.Open.MS.GraphV10.PowerShell.dll" FileName="MICROS~8.PDB|Microsoft.Open.MS.GraphV10.PowerShell.pdb" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.Open.MS.GraphV10.PowerShell.pdb" SelfReg="false"/>
+    <ROW File="Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll" Component_="Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll" FileName="MICRO~14.DLL|Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll" SelfReg="false"/>
+    <ROW File="Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml" Component_="AzureAD.Format.ps1xml" FileName="MICRO~11.XML|Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml" SelfReg="false"/>
+    <ROW File="Newtonsoft.Json.dll" Component_="Newtonsoft.Json.dll" FileName="NEWTON~1.DLL|Newtonsoft.Json.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Newtonsoft.Json.dll" SelfReg="false"/>
+    <ROW File="Newtonsoft.Json.xml" Component_="AzureAD.Format.ps1xml" FileName="NEWTON~1.XML|Newtonsoft.Json.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Newtonsoft.Json.xml" SelfReg="false"/>
+    <ROW File="OverrideEnvironment.config.txt" Component_="AzureAD.Format.ps1xml" FileName="OVERRI~1.TXT|OverrideEnvironment.config.txt" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\OverrideEnvironment.config.txt" SelfReg="false"/>
+    <ROW File="PSGetModuleInfo.xml" Component_="AzureAD.Format.ps1xml" FileName="PSGETM~1.XML|PSGetModuleInfo.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\PSGetModuleInfo.xml" SelfReg="false"/>
+    <ROW File="RestSharp.dll" Component_="RestSharp.dll" FileName="RESTSH~1.DLL|RestSharp.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\RestSharp.dll" SelfReg="false"/>
+    <ROW File="RestSharp.xml" Component_="AzureAD.Format.ps1xml" FileName="RESTSH~1.XML|RestSharp.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\RestSharp.xml" SelfReg="false"/>
+    <ROW File="Rhino.Mocks.dll" Component_="Rhino.Mocks.dll" FileName="RHINOM~1.DLL|Rhino.Mocks.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\Rhino.Mocks.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.Edm.resources.dll_6" Component_="Microsoft.Data.Edm.resources.dll_6" FileName="MICROS~1.DLL|Microsoft.Data.Edm.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\ru\Microsoft.Data.Edm.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.OData.resources.dll_6" Component_="Microsoft.Data.OData.resources.dll_6" FileName="MICROS~2.DLL|Microsoft.Data.OData.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\ru\Microsoft.Data.OData.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.Services.Client.resources.dll_6" Component_="Microsoft.Data.Services.Client.resources.dll_6" FileName="MICROS~3.DLL|Microsoft.Data.Services.Client.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\ru\Microsoft.Data.Services.Client.resources.dll" SelfReg="false"/>
+    <ROW File="System.Spatial.resources.dll_6" Component_="System.Spatial.resources.dll_6" FileName="SYSTEM~1.DLL|System.Spatial.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\ru\System.Spatial.resources.dll" SelfReg="false"/>
+    <ROW File="System.IdentityModel.Tokens.Jwt.dll" Component_="System.IdentityModel.Tokens.Jwt.dll" FileName="SYSTEM~1.DLL|System.IdentityModel.Tokens.Jwt.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\System.IdentityModel.Tokens.Jwt.dll" SelfReg="false"/>
+    <ROW File="System.IdentityModel.Tokens.Jwt.pdb" Component_="System.IdentityModel.Tokens.Jwt.dll" FileName="SYSTEM~1.PDB|System.IdentityModel.Tokens.Jwt.pdb" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\System.IdentityModel.Tokens.Jwt.pdb" SelfReg="false"/>
+    <ROW File="System.IdentityModel.Tokens.Jwt.xml" Component_="AzureAD.Format.ps1xml" FileName="SYSTEM~1.XML|System.IdentityModel.Tokens.Jwt.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\System.IdentityModel.Tokens.Jwt.xml" SelfReg="false"/>
+    <ROW File="System.Management.Automation.dll" Component_="System.Management.Automation.dll" FileName="SYSTEM~2.DLL|System.Management.Automation.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\System.Management.Automation.dll" SelfReg="false"/>
+    <ROW File="System.Spatial.dll" Component_="System.Spatial.dll" FileName="SYSTEM~3.DLL|System.Spatial.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\System.Spatial.dll" SelfReg="false"/>
+    <ROW File="System.Spatial.xml" Component_="AzureAD.Format.ps1xml" FileName="SYSTEM~2.XML|System.Spatial.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\System.Spatial.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Data.Edm.resources.dll_7" Component_="Microsoft.Data.Edm.resources.dll_7" FileName="MICROS~1.DLL|Microsoft.Data.Edm.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\zh-Hans\Microsoft.Data.Edm.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.OData.resources.dll_7" Component_="Microsoft.Data.OData.resources.dll_7" FileName="MICROS~2.DLL|Microsoft.Data.OData.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\zh-Hans\Microsoft.Data.OData.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.Services.Client.resources.dll_7" Component_="Microsoft.Data.Services.Client.resources.dll_7" FileName="MICROS~3.DLL|Microsoft.Data.Services.Client.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\zh-Hans\Microsoft.Data.Services.Client.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_6" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_5" FileName="MICROS~1.XML|Microsoft.Open.Azure.AD.CommonLibrary.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\zh-Hans\Microsoft.Open.Azure.AD.CommonLibrary.dll-Help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll_5" Component_="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll_5" FileName="MICROS~4.DLL|Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\zh-Hans\Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dllHelp.xml_6" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_5" FileName="MICROS~2.XML|Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\zh-Hans\Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Open.AzureAD16.Graph.PowerShell.dllHelp.xml_6" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_5" FileName="MICROS~3.XML|Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\zh-Hans\Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Open.MS.GraphV10.PowerShell.dllHelp.xml_6" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_5" FileName="MICROS~4.XML|Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\zh-Hans\Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml" SelfReg="false"/>
+    <ROW File="System.Spatial.resources.dll_7" Component_="System.Spatial.resources.dll_7" FileName="SYSTEM~1.DLL|System.Spatial.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\zh-Hans\System.Spatial.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.Edm.resources.dll_8" Component_="Microsoft.Data.Edm.resources.dll_8" FileName="MICROS~1.DLL|Microsoft.Data.Edm.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\zh-Hant\Microsoft.Data.Edm.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.OData.resources.dll_8" Component_="Microsoft.Data.OData.resources.dll_8" FileName="MICROS~2.DLL|Microsoft.Data.OData.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\zh-Hant\Microsoft.Data.OData.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.Services.Client.resources.dll_8" Component_="Microsoft.Data.Services.Client.resources.dll_8" FileName="MICROS~3.DLL|Microsoft.Data.Services.Client.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\zh-Hant\Microsoft.Data.Services.Client.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_7" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_6" FileName="MICROS~1.XML|Microsoft.Open.Azure.AD.CommonLibrary.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\zh-Hant\Microsoft.Open.Azure.AD.CommonLibrary.dll-Help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll_6" Component_="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll_6" FileName="MICROS~4.DLL|Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\zh-Hant\Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dllHelp.xml_7" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_6" FileName="MICROS~2.XML|Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\zh-Hant\Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll-Help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Open.AzureAD16.Graph.PowerShell.dllHelp.xml_7" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_6" FileName="MICROS~3.XML|Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\zh-Hant\Microsoft.Open.AzureAD16.Graph.PowerShell.dll-Help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Open.MS.GraphV10.PowerShell.dllHelp.xml_7" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_6" FileName="MICROS~4.XML|Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\zh-Hant\Microsoft.Open.MS.GraphV10.PowerShell.dll-Help.xml" SelfReg="false"/>
+    <ROW File="System.Spatial.resources.dll_8" Component_="System.Spatial.resources.dll_8" FileName="SYSTEM~1.DLL|System.Spatial.resources.dll" Attributes="0" SourcePath="modules\AzureAD\2.0.2.116\zh-Hant\System.Spatial.resources.dll" SelfReg="false"/>
+    <ROW File="AdministrationConfig.wixproj" Component_="AdministrationConfig.wixproj" FileName="ADMINI~1.WIX|AdministrationConfig.wixproj" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\AdministrationConfig.wixproj" SelfReg="false"/>
+    <ROW File="constants.wxi" Component_="AdministrationConfig.wixproj" FileName="CONSTA~1.WXI|constants.wxi" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\constants.wxi" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml" FileName="MICROS~1.XML|Microsoft.Online.Administration.Automation.PSModule.dll-help.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\de\Microsoft.Online.Administration.Automation.PSModule.dll-help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.dll" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll" FileName="MICROS~1.DLL|Microsoft.Online.Identity.Federation.PowerShell.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\de\Microsoft.Online.Identity.Federation.PowerShell.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.dllhelp.xml" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml" FileName="MICROS~2.XML|Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\de\Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.pdb" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll" FileName="MICROS~1.PDB|Microsoft.Online.Identity.Federation.PowerShell.pdb" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\de\Microsoft.Online.Identity.Federation.PowerShell.pdb" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll" FileName="MICROS~2.DLL|Microsoft.Online.Identity.Federation.PowerShell.Strings.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\de\Microsoft.Online.Identity.Federation.PowerShell.Strings.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll" FileName="MICROS~2.PDB|Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\de\Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb" SelfReg="false"/>
+    <ROW File="MSOnline.Format.ps1xml" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml" FileName="MSONLI~1.PS1|MSOnline.Format.ps1xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\de\MSOnline.Format.ps1xml" SelfReg="false"/>
+    <ROW File="MSOnline.psd1" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml" FileName="MSONLI~1.PSD|MSOnline.psd1" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\de\MSOnline.psd1" SelfReg="false"/>
+    <ROW File="MSOnlineExtended.psd1" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml" FileName="MSONLI~2.PSD|MSOnlineExtended.psd1" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\de\MSOnlineExtended.psd1" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_1" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_1" FileName="MICROS~1.XML|Microsoft.Online.Administration.Automation.PSModule.dll-help.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\es\Microsoft.Online.Administration.Automation.PSModule.dll-help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.dll_1" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll_1" FileName="MICROS~1.DLL|Microsoft.Online.Identity.Federation.PowerShell.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\es\Microsoft.Online.Identity.Federation.PowerShell.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.dllhelp.xml_1" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_1" FileName="MICROS~2.XML|Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\es\Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.pdb_1" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll_1" FileName="MICROS~1.PDB|Microsoft.Online.Identity.Federation.PowerShell.pdb" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\es\Microsoft.Online.Identity.Federation.PowerShell.pdb" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_1" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_1" FileName="MICROS~2.DLL|Microsoft.Online.Identity.Federation.PowerShell.Strings.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\es\Microsoft.Online.Identity.Federation.PowerShell.Strings.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb_1" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_1" FileName="MICROS~2.PDB|Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\es\Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb" SelfReg="false"/>
+    <ROW File="MSOnline.Format.ps1xml_1" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_1" FileName="MSONLI~1.PS1|MSOnline.Format.ps1xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\es\MSOnline.Format.ps1xml" SelfReg="false"/>
+    <ROW File="MSOnline.psd1_1" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_1" FileName="MSONLI~1.PSD|MSOnline.psd1" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\es\MSOnline.psd1" SelfReg="false"/>
+    <ROW File="MSOnlineExtended.psd1_1" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_1" FileName="MSONLI~2.PSD|MSOnlineExtended.psd1" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\es\MSOnlineExtended.psd1" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_2" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_2" FileName="MICROS~1.XML|Microsoft.Online.Administration.Automation.PSModule.dll-help.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\fr\Microsoft.Online.Administration.Automation.PSModule.dll-help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.dll_2" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll_2" FileName="MICROS~1.DLL|Microsoft.Online.Identity.Federation.PowerShell.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\fr\Microsoft.Online.Identity.Federation.PowerShell.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.dllhelp.xml_2" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_2" FileName="MICROS~2.XML|Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\fr\Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.pdb_2" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll_2" FileName="MICROS~1.PDB|Microsoft.Online.Identity.Federation.PowerShell.pdb" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\fr\Microsoft.Online.Identity.Federation.PowerShell.pdb" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_2" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_2" FileName="MICROS~2.DLL|Microsoft.Online.Identity.Federation.PowerShell.Strings.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\fr\Microsoft.Online.Identity.Federation.PowerShell.Strings.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb_2" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_2" FileName="MICROS~2.PDB|Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\fr\Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb" SelfReg="false"/>
+    <ROW File="MSOnline.Format.ps1xml_2" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_2" FileName="MSONLI~1.PS1|MSOnline.Format.ps1xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\fr\MSOnline.Format.ps1xml" SelfReg="false"/>
+    <ROW File="MSOnline.psd1_2" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_2" FileName="MSONLI~1.PSD|MSOnline.psd1" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\fr\MSOnline.psd1" SelfReg="false"/>
+    <ROW File="MSOnlineExtended.psd1_2" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_2" FileName="MSONLI~2.PSD|MSOnlineExtended.psd1" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\fr\MSOnlineExtended.psd1" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_3" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_3" FileName="MICROS~1.XML|Microsoft.Online.Administration.Automation.PSModule.dll-help.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\InstallerHelpFiles\Microsoft.Online.Administration.Automation.PSModule.dll-help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.dll_3" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll_3" FileName="MICROS~1.DLL|Microsoft.Online.Identity.Federation.PowerShell.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\InstallerHelpFiles\Microsoft.Online.Identity.Federation.PowerShell.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.dllhelp.xml_3" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_3" FileName="MICROS~2.XML|Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\InstallerHelpFiles\Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.pdb_3" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll_3" FileName="MICROS~1.PDB|Microsoft.Online.Identity.Federation.PowerShell.pdb" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\InstallerHelpFiles\Microsoft.Online.Identity.Federation.PowerShell.pdb" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_3" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_3" FileName="MICROS~2.DLL|Microsoft.Online.Identity.Federation.PowerShell.Strings.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\InstallerHelpFiles\Microsoft.Online.Identity.Federation.PowerShell.Strings.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb_3" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_3" FileName="MICROS~2.PDB|Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\InstallerHelpFiles\Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb" SelfReg="false"/>
+    <ROW File="MSOnline.Format.ps1xml_3" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_3" FileName="MSONLI~1.PS1|MSOnline.Format.ps1xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\InstallerHelpFiles\MSOnline.Format.ps1xml" SelfReg="false"/>
+    <ROW File="MSOnline.psd1_3" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_3" FileName="MSONLI~1.PSD|MSOnline.psd1" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\InstallerHelpFiles\MSOnline.psd1" SelfReg="false"/>
+    <ROW File="MSOnlineExtended.psd1_3" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_3" FileName="MSONLI~2.PSD|MSOnlineExtended.psd1" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\InstallerHelpFiles\MSOnlineExtended.psd1" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_4" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_4" FileName="MICROS~1.XML|Microsoft.Online.Administration.Automation.PSModule.dll-help.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\it\Microsoft.Online.Administration.Automation.PSModule.dll-help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.dll_4" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll_4" FileName="MICROS~1.DLL|Microsoft.Online.Identity.Federation.PowerShell.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\it\Microsoft.Online.Identity.Federation.PowerShell.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.dllhelp.xml_4" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_4" FileName="MICROS~2.XML|Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\it\Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.pdb_4" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll_4" FileName="MICROS~1.PDB|Microsoft.Online.Identity.Federation.PowerShell.pdb" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\it\Microsoft.Online.Identity.Federation.PowerShell.pdb" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_4" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_4" FileName="MICROS~2.DLL|Microsoft.Online.Identity.Federation.PowerShell.Strings.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\it\Microsoft.Online.Identity.Federation.PowerShell.Strings.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb_4" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_4" FileName="MICROS~2.PDB|Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\it\Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb" SelfReg="false"/>
+    <ROW File="MSOnline.Format.ps1xml_4" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_4" FileName="MSONLI~1.PS1|MSOnline.Format.ps1xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\it\MSOnline.Format.ps1xml" SelfReg="false"/>
+    <ROW File="MSOnline.psd1_4" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_4" FileName="MSONLI~1.PSD|MSOnline.psd1" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\it\MSOnline.psd1" SelfReg="false"/>
+    <ROW File="MSOnlineExtended.psd1_4" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_4" FileName="MSONLI~2.PSD|MSOnlineExtended.psd1" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\it\MSOnlineExtended.psd1" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_5" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_5" FileName="MICROS~1.XML|Microsoft.Online.Administration.Automation.PSModule.dll-help.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\ja\Microsoft.Online.Administration.Automation.PSModule.dll-help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.dll_5" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll_5" FileName="MICROS~1.DLL|Microsoft.Online.Identity.Federation.PowerShell.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\ja\Microsoft.Online.Identity.Federation.PowerShell.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.dllhelp.xml_5" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_5" FileName="MICROS~2.XML|Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\ja\Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.pdb_5" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll_5" FileName="MICROS~1.PDB|Microsoft.Online.Identity.Federation.PowerShell.pdb" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\ja\Microsoft.Online.Identity.Federation.PowerShell.pdb" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_5" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_5" FileName="MICROS~2.DLL|Microsoft.Online.Identity.Federation.PowerShell.Strings.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\ja\Microsoft.Online.Identity.Federation.PowerShell.Strings.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb_5" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_5" FileName="MICROS~2.PDB|Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\ja\Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb" SelfReg="false"/>
+    <ROW File="MSOnline.Format.ps1xml_5" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_5" FileName="MSONLI~1.PS1|MSOnline.Format.ps1xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\ja\MSOnline.Format.ps1xml" SelfReg="false"/>
+    <ROW File="MSOnline.psd1_5" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_5" FileName="MSONLI~1.PSD|MSOnline.psd1" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\ja\MSOnline.psd1" SelfReg="false"/>
+    <ROW File="MSOnlineExtended.psd1_5" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_5" FileName="MSONLI~2.PSD|MSOnlineExtended.psd1" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\ja\MSOnlineExtended.psd1" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_6" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_6" FileName="MICROS~1.XML|Microsoft.Online.Administration.Automation.PSModule.dll-help.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\ko\Microsoft.Online.Administration.Automation.PSModule.dll-help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.dll_6" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll_6" FileName="MICROS~1.DLL|Microsoft.Online.Identity.Federation.PowerShell.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\ko\Microsoft.Online.Identity.Federation.PowerShell.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.dllhelp.xml_6" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_6" FileName="MICROS~2.XML|Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\ko\Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.pdb_6" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll_6" FileName="MICROS~1.PDB|Microsoft.Online.Identity.Federation.PowerShell.pdb" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\ko\Microsoft.Online.Identity.Federation.PowerShell.pdb" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_6" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_6" FileName="MICROS~2.DLL|Microsoft.Online.Identity.Federation.PowerShell.Strings.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\ko\Microsoft.Online.Identity.Federation.PowerShell.Strings.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb_6" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_6" FileName="MICROS~2.PDB|Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\ko\Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb" SelfReg="false"/>
+    <ROW File="MSOnline.Format.ps1xml_6" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_6" FileName="MSONLI~1.PS1|MSOnline.Format.ps1xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\ko\MSOnline.Format.ps1xml" SelfReg="false"/>
+    <ROW File="MSOnline.psd1_6" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_6" FileName="MSONLI~1.PSD|MSOnline.psd1" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\ko\MSOnline.psd1" SelfReg="false"/>
+    <ROW File="MSOnlineExtended.psd1_6" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_6" FileName="MSONLI~2.PSD|MSOnlineExtended.psd1" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\ko\MSOnlineExtended.psd1" SelfReg="false"/>
+    <ROW File="localps.reg" Component_="AdministrationConfig.wixproj" FileName="localps.reg" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\localps.reg" SelfReg="false"/>
+    <ROW File="Microsoft.Azure.ActiveDirectory.Client.Framework.dll" Component_="Microsoft.Azure.ActiveDirectory.Client.Framework.dll" FileName="MICROS~1.DLL|Microsoft.Azure.ActiveDirectory.Client.Framework.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\Microsoft.Azure.ActiveDirectory.Client.Framework.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Azure.ActiveDirectory.Client.Framework.pdb" Component_="Microsoft.Azure.ActiveDirectory.Client.Framework.dll" FileName="MICROS~1.PDB|Microsoft.Azure.ActiveDirectory.Client.Framework.pdb" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\Microsoft.Azure.ActiveDirectory.Client.Framework.pdb" SelfReg="false"/>
+    <ROW File="Microsoft.Azure.ActiveDirectory.GraphClient.dll" Component_="Microsoft.Azure.ActiveDirectory.GraphClient.dll" FileName="MICROS~2.DLL|Microsoft.Azure.ActiveDirectory.GraphClient.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\Microsoft.Azure.ActiveDirectory.GraphClient.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.Edm.dll_1" Component_="Microsoft.Data.Edm.dll_1" FileName="MICROS~3.DLL|Microsoft.Data.Edm.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\Microsoft.Data.Edm.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.Edm.resources.dll_9" Component_="Microsoft.Data.Edm.resources.dll_9" FileName="MICROS~4.DLL|Microsoft.Data.Edm.resources.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\Microsoft.Data.Edm.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.Edm.xml_1" Component_="AdministrationConfig.wixproj" FileName="MICROS~1.XML|Microsoft.Data.Edm.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\Microsoft.Data.Edm.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Data.OData.dll_1" Component_="Microsoft.Data.OData.dll_1" FileName="MICROS~5.DLL|Microsoft.Data.OData.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\Microsoft.Data.OData.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.OData.resources.dll_9" Component_="Microsoft.Data.OData.resources.dll_9" FileName="MICROS~6.DLL|Microsoft.Data.OData.resources.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\Microsoft.Data.OData.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.OData.xml_1" Component_="AdministrationConfig.wixproj" FileName="MICROS~2.XML|Microsoft.Data.OData.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\Microsoft.Data.OData.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Data.Services.Client.dll_1" Component_="Microsoft.Data.Services.Client.dll_1" FileName="MICROS~7.DLL|Microsoft.Data.Services.Client.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\Microsoft.Data.Services.Client.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.Services.Client.resources.dll_9" Component_="Microsoft.Data.Services.Client.resources.dll_9" FileName="MICROS~8.DLL|Microsoft.Data.Services.Client.resources.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\Microsoft.Data.Services.Client.resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.Services.Client.xml_1" Component_="AdministrationConfig.wixproj" FileName="MICROS~3.XML|Microsoft.Data.Services.Client.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\Microsoft.Data.Services.Client.xml" SelfReg="false"/>
+    <ROW File="Microsoft.IdentityModel.Clients.ActiveDirectory.dll_1" Component_="Microsoft.IdentityModel.Clients.ActiveDirectory.dll_1" FileName="MICROS~9.DLL|Microsoft.IdentityModel.Clients.ActiveDirectory.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\Microsoft.IdentityModel.Clients.ActiveDirectory.dll" SelfReg="false"/>
+    <ROW File="Microsoft.IdentityModel.Clients.ActiveDirectory.pdb" Component_="Microsoft.IdentityModel.Clients.ActiveDirectory.dll_1" FileName="MICROS~2.PDB|Microsoft.IdentityModel.Clients.ActiveDirectory.pdb" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\Microsoft.IdentityModel.Clients.ActiveDirectory.pdb" SelfReg="false"/>
+    <ROW File="Microsoft.IdentityModel.Clients.ActiveDirectory.xml_1" Component_="AdministrationConfig.wixproj" FileName="MICROS~4.XML|Microsoft.IdentityModel.Clients.ActiveDirectory.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\Microsoft.IdentityModel.Clients.ActiveDirectory.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Administration.Automation.PSModule.dll" Component_="Microsoft.Online.Administration.Automation.PSModule.dll" FileName="MICRO~10.DLL|Microsoft.Online.Administration.Automation.PSModule.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\Microsoft.Online.Administration.Automation.PSModule.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_7" Component_="AdministrationConfig.wixproj" FileName="MICROS~5.XML|Microsoft.Online.Administration.Automation.PSModule.dll-help.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\Microsoft.Online.Administration.Automation.PSModule.dll-help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Administration.Automation.PSModule.pdb" Component_="Microsoft.Online.Administration.Automation.PSModule.dll" FileName="MICROS~3.PDB|Microsoft.Online.Administration.Automation.PSModule.pdb" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\Microsoft.Online.Administration.Automation.PSModule.pdb" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Administration.Automation.PSModule.Resources.dll" Component_="Microsoft.Online.Administration.Automation.PSModule.Resources.dll" FileName="MICRO~11.DLL|Microsoft.Online.Administration.Automation.PSModule.Resources.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\Microsoft.Online.Administration.Automation.PSModule.Resources.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Administration.Automation.PSModule.Resources.pdb" Component_="Microsoft.Online.Administration.Automation.PSModule.Resources.dll" FileName="MICROS~4.PDB|Microsoft.Online.Administration.Automation.PSModule.Resources.pdb" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\Microsoft.Online.Administration.Automation.PSModule.Resources.pdb" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.dll_7" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll_7" FileName="MICRO~12.DLL|Microsoft.Online.Identity.Federation.PowerShell.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\Microsoft.Online.Identity.Federation.PowerShell.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.Powershell.dllhelp.xml_7" Component_="AdministrationConfig.wixproj" FileName="MICROS~6.XML|Microsoft.Online.Identity.Federation.Powershell.dll-help.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\Microsoft.Online.Identity.Federation.Powershell.dll-help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.pdb_7" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll_7" FileName="MICROS~5.PDB|Microsoft.Online.Identity.Federation.PowerShell.pdb" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\Microsoft.Online.Identity.Federation.PowerShell.pdb" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_7" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_7" FileName="MICRO~13.DLL|Microsoft.Online.Identity.Federation.PowerShell.Strings.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\Microsoft.Online.Identity.Federation.PowerShell.Strings.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb_7" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_7" FileName="MICROS~6.PDB|Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb" SelfReg="false"/>
+    <ROW File="MSOnline.Format.ps1xml_7" Component_="AdministrationConfig.wixproj" FileName="MSONLI~1.PS1|MSOnline.Format.ps1xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\MSOnline.Format.ps1xml" SelfReg="false"/>
+    <ROW File="MSOnline.psd1_7" Component_="AdministrationConfig.wixproj" FileName="MSONLI~1.PSD|MSOnline.psd1" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\MSOnline.psd1" SelfReg="false"/>
+    <ROW File="MSOnlineExtended.psd1_7" Component_="AdministrationConfig.wixproj" FileName="MSONLI~2.PSD|MSOnlineExtended.psd1" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\MSOnlineExtended.psd1" SelfReg="false"/>
+    <ROW File="Newtonsoft.Json.dll_1" Component_="Newtonsoft.Json.dll_1" FileName="NEWTON~1.DLL|Newtonsoft.Json.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\Newtonsoft.Json.dll" SelfReg="false"/>
+    <ROW File="Newtonsoft.Json.xml_1" Component_="AdministrationConfig.wixproj" FileName="NEWTON~1.XML|Newtonsoft.Json.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\Newtonsoft.Json.xml" SelfReg="false"/>
+    <ROW File="PSGetModuleInfo.xml_1" Component_="AdministrationConfig.wixproj" FileName="PSGETM~1.XML|PSGetModuleInfo.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\PSGetModuleInfo.xml" SelfReg="false"/>
+    <ROW File="RestSharp.dll_1" Component_="RestSharp.dll_1" FileName="RESTSH~1.DLL|RestSharp.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\RestSharp.dll" SelfReg="false"/>
+    <ROW File="RestSharp.xml_1" Component_="AdministrationConfig.wixproj" FileName="RESTSH~1.XML|RestSharp.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\RestSharp.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_8" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_7" FileName="MICROS~1.XML|Microsoft.Online.Administration.Automation.PSModule.dll-help.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\ru\Microsoft.Online.Administration.Automation.PSModule.dll-help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.dll_8" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll_8" FileName="MICROS~1.DLL|Microsoft.Online.Identity.Federation.PowerShell.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\ru\Microsoft.Online.Identity.Federation.PowerShell.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.dllhelp.xml_8" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_7" FileName="MICROS~2.XML|Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\ru\Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.pdb_8" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll_8" FileName="MICROS~1.PDB|Microsoft.Online.Identity.Federation.PowerShell.pdb" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\ru\Microsoft.Online.Identity.Federation.PowerShell.pdb" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_8" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_8" FileName="MICROS~2.DLL|Microsoft.Online.Identity.Federation.PowerShell.Strings.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\ru\Microsoft.Online.Identity.Federation.PowerShell.Strings.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb_8" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_8" FileName="MICROS~2.PDB|Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\ru\Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb" SelfReg="false"/>
+    <ROW File="MSOnline.Format.ps1xml_8" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_7" FileName="MSONLI~1.PS1|MSOnline.Format.ps1xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\ru\MSOnline.Format.ps1xml" SelfReg="false"/>
+    <ROW File="MSOnline.psd1_8" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_7" FileName="MSONLI~1.PSD|MSOnline.psd1" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\ru\MSOnline.psd1" SelfReg="false"/>
+    <ROW File="MSOnlineExtended.psd1_8" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_7" FileName="MSONLI~2.PSD|MSOnlineExtended.psd1" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\ru\MSOnlineExtended.psd1" SelfReg="false"/>
+    <ROW File="System.IdentityModel.Tokens.Jwt.dll_1" Component_="System.IdentityModel.Tokens.Jwt.dll_1" FileName="SYSTEM~1.DLL|System.IdentityModel.Tokens.Jwt.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\System.IdentityModel.Tokens.Jwt.dll" SelfReg="false"/>
+    <ROW File="System.IdentityModel.Tokens.Jwt.pdb_1" Component_="System.IdentityModel.Tokens.Jwt.dll_1" FileName="SYSTEM~1.PDB|System.IdentityModel.Tokens.Jwt.pdb" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\System.IdentityModel.Tokens.Jwt.pdb" SelfReg="false"/>
+    <ROW File="System.IdentityModel.Tokens.Jwt.xml_1" Component_="AdministrationConfig.wixproj" FileName="SYSTEM~1.XML|System.IdentityModel.Tokens.Jwt.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\System.IdentityModel.Tokens.Jwt.xml" SelfReg="false"/>
+    <ROW File="System.Management.Automation.dll_1" Component_="System.Management.Automation.dll_1" FileName="SYSTEM~2.DLL|System.Management.Automation.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\System.Management.Automation.dll" SelfReg="false"/>
+    <ROW File="System.Spatial.dll_1" Component_="System.Spatial.dll_1" FileName="SYSTEM~3.DLL|System.Spatial.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\System.Spatial.dll" SelfReg="false"/>
+    <ROW File="System.Spatial.resources.dll_9" Component_="System.Spatial.resources.dll_9" FileName="SYSTEM~4.DLL|System.Spatial.resources.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\System.Spatial.resources.dll" SelfReg="false"/>
+    <ROW File="System.Spatial.xml_1" Component_="AdministrationConfig.wixproj" FileName="SYSTEM~2.XML|System.Spatial.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\System.Spatial.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_9" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_8" FileName="MICROS~1.XML|Microsoft.Online.Administration.Automation.PSModule.dll-help.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\zh-hans\Microsoft.Online.Administration.Automation.PSModule.dll-help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.dll_9" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll_9" FileName="MICROS~1.DLL|Microsoft.Online.Identity.Federation.PowerShell.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\zh-hans\Microsoft.Online.Identity.Federation.PowerShell.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.dllhelp.xml_9" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_8" FileName="MICROS~2.XML|Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\zh-hans\Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.pdb_9" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll_9" FileName="MICROS~1.PDB|Microsoft.Online.Identity.Federation.PowerShell.pdb" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\zh-hans\Microsoft.Online.Identity.Federation.PowerShell.pdb" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_9" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_9" FileName="MICROS~2.DLL|Microsoft.Online.Identity.Federation.PowerShell.Strings.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\zh-hans\Microsoft.Online.Identity.Federation.PowerShell.Strings.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb_9" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_9" FileName="MICROS~2.PDB|Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\zh-hans\Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb" SelfReg="false"/>
+    <ROW File="MSOnline.Format.ps1xml_9" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_8" FileName="MSONLI~1.PS1|MSOnline.Format.ps1xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\zh-hans\MSOnline.Format.ps1xml" SelfReg="false"/>
+    <ROW File="MSOnline.psd1_9" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_8" FileName="MSONLI~1.PSD|MSOnline.psd1" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\zh-hans\MSOnline.psd1" SelfReg="false"/>
+    <ROW File="MSOnlineExtended.psd1_9" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_8" FileName="MSONLI~2.PSD|MSOnlineExtended.psd1" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\zh-hans\MSOnlineExtended.psd1" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_10" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_9" FileName="MICROS~1.XML|Microsoft.Online.Administration.Automation.PSModule.dll-help.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\zh-hant\Microsoft.Online.Administration.Automation.PSModule.dll-help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.dll_10" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll_10" FileName="MICROS~1.DLL|Microsoft.Online.Identity.Federation.PowerShell.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\zh-hant\Microsoft.Online.Identity.Federation.PowerShell.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.dllhelp.xml_10" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_9" FileName="MICROS~2.XML|Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\zh-hant\Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.pdb_10" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll_10" FileName="MICROS~1.PDB|Microsoft.Online.Identity.Federation.PowerShell.pdb" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\zh-hant\Microsoft.Online.Identity.Federation.PowerShell.pdb" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_10" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_10" FileName="MICROS~2.DLL|Microsoft.Online.Identity.Federation.PowerShell.Strings.dll" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\zh-hant\Microsoft.Online.Identity.Federation.PowerShell.Strings.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb_10" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_10" FileName="MICROS~2.PDB|Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\zh-hant\Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb" SelfReg="false"/>
+    <ROW File="MSOnline.Format.ps1xml_10" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_9" FileName="MSONLI~1.PS1|MSOnline.Format.ps1xml" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\zh-hant\MSOnline.Format.ps1xml" SelfReg="false"/>
+    <ROW File="MSOnline.psd1_10" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_9" FileName="MSONLI~1.PSD|MSOnline.psd1" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\zh-hant\MSOnline.psd1" SelfReg="false"/>
+    <ROW File="MSOnlineExtended.psd1_10" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_9" FileName="MSONLI~2.PSD|MSOnlineExtended.psd1" Attributes="0" SourcePath="modules\MSOnline\1.1.183.66\zh-hant\MSOnlineExtended.psd1" SelfReg="false"/>
+    <ROW File="LICENSE" Component_="LICENSE" FileName="LICENSE" Attributes="0" SourcePath="modules\PwPoSh\0.2.789.560\LICENSE" SelfReg="false"/>
+    <ROW File="ConvertFromSecurePassword.ps1" Component_="ConvertFromSecurePassword.ps1" FileName="CONVER~1.PS1|ConvertFrom-SecurePassword.ps1" Attributes="0" SourcePath="modules\PwPoSh\0.2.789.560\Private\ConvertFrom-SecurePassword.ps1" SelfReg="false"/>
+    <ROW File="GetStringEntropy.ps1" Component_="ConvertFromSecurePassword.ps1" FileName="GET-ST~1.PS1|Get-StringEntropy.ps1" Attributes="0" SourcePath="modules\PwPoSh\0.2.789.560\Private\Get-StringEntropy.ps1" SelfReg="false"/>
+    <ROW File="PSGetModuleInfo.xml_2" Component_="LICENSE" FileName="PSGETM~1.XML|PSGetModuleInfo.xml" Attributes="0" SourcePath="modules\PwPoSh\0.2.789.560\PSGetModuleInfo.xml" SelfReg="false"/>
+    <ROW File="GetPassword.ps1" Component_="GetPassword.ps1" FileName="GET-PA~1.PS1|Get-Password.ps1" Attributes="0" SourcePath="modules\PwPoSh\0.2.789.560\Public\Get-Password.ps1" SelfReg="false"/>
+    <ROW File="GetPasswordWeb.ps1" Component_="GetPassword.ps1" FileName="GET-PA~2.PS1|Get-PasswordWeb.ps1" Attributes="0" SourcePath="modules\PwPoSh\0.2.789.560\Public\Get-PasswordWeb.ps1" SelfReg="false"/>
+    <ROW File="NewPassword.ps1" Component_="GetPassword.ps1" FileName="NEW-PA~1.PS1|New-Password.ps1" Attributes="0" SourcePath="modules\PwPoSh\0.2.789.560\Public\New-Password.ps1" SelfReg="false"/>
+    <ROW File="PublishPassword.ps1" Component_="GetPassword.ps1" FileName="PUBLIS~1.PS1|Publish-Password.ps1" Attributes="0" SourcePath="modules\PwPoSh\0.2.789.560\Public\Publish-Password.ps1" SelfReg="false"/>
+    <ROW File="UnpublishPassword.ps1" Component_="GetPassword.ps1" FileName="UNPUBL~1.PS1|Unpublish-Password.ps1" Attributes="0" SourcePath="modules\PwPoSh\0.2.789.560\Public\Unpublish-Password.ps1" SelfReg="false"/>
+    <ROW File="PwPoSh.psd1" Component_="LICENSE" FileName="PWPOSH~1.PSD|PwPoSh.psd1" Attributes="0" SourcePath="modules\PwPoSh\0.2.789.560\PwPoSh.psd1" SelfReg="false"/>
+    <ROW File="PwPoSh.psm1" Component_="LICENSE" FileName="PWPOSH~1.PSM|PwPoSh.psm1" Attributes="0" SourcePath="modules\PwPoSh\0.2.789.560\PwPoSh.psm1" SelfReg="false"/>
+    <ROW File="README.md" Component_="LICENSE" FileName="README.md" Attributes="0" SourcePath="modules\PwPoSh\0.2.789.560\README.md" SelfReg="false"/>
+    <ROW File="DCSAdminTOOLKIT.lnk" Component_="DCSAdminTOOLKIT.lnk" FileName="DCSADM~1.LNK|DCSAdminTOOLKIT.lnk" Attributes="0" SourcePath="DCSAdminTOOLKIT.lnk" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="." PackageFileName="DCS Admin Toolkit Setup" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[ProgramFiles64Folder][DCSAdminToolkit_Dir]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="changelog.txt"/>
+    <ROW Feature_="MainFeature" Component_="DCSAdminTOOLKIT.exe"/>
+    <ROW Feature_="MainFeature" Component_="AzureAD.Format.ps1xml"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.Edm.resources.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.OData.resources.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.Services.Client.resources.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Spatial.resources.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.Edm.resources.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.OData.resources.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.Services.Client.resources.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_1"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="System.Spatial.resources.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.Edm.resources.dll_2"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.OData.resources.dll_2"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.Services.Client.resources.dll_2"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_2"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll_2"/>
+    <ROW Feature_="MainFeature" Component_="System.Spatial.resources.dll_2"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.Edm.resources.dll_3"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.OData.resources.dll_3"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.Services.Client.resources.dll_3"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_3"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll_3"/>
+    <ROW Feature_="MainFeature" Component_="System.Spatial.resources.dll_3"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.Edm.resources.dll_4"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.OData.resources.dll_4"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.Services.Client.resources.dll_4"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_4"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll_4"/>
+    <ROW Feature_="MainFeature" Component_="System.Spatial.resources.dll_4"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.Edm.resources.dll_5"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.OData.resources.dll_5"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.Services.Client.resources.dll_5"/>
+    <ROW Feature_="MainFeature" Component_="System.Spatial.resources.dll_5"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.Edm.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.OData.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.Services.Client.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.IdentityModel.Clients.ActiveDirectory.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Open.Azure.AD.CommonLibrary.Resources.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Open.AzureAD16.Graph.Client.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Open.AzureAD16.Graph.PowerShell.Custom.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Open.AzureAD16.Graph.PowerShell.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Open.MS.GraphV10.Client.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Open.MS.GraphV10.PowerShell.Custom.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Open.MS.GraphV10.PowerShell.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll"/>
+    <ROW Feature_="MainFeature" Component_="Newtonsoft.Json.dll"/>
+    <ROW Feature_="MainFeature" Component_="RestSharp.dll"/>
+    <ROW Feature_="MainFeature" Component_="Rhino.Mocks.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.Edm.resources.dll_6"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.OData.resources.dll_6"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.Services.Client.resources.dll_6"/>
+    <ROW Feature_="MainFeature" Component_="System.Spatial.resources.dll_6"/>
+    <ROW Feature_="MainFeature" Component_="System.IdentityModel.Tokens.Jwt.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Management.Automation.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Spatial.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.Edm.resources.dll_7"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.OData.resources.dll_7"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.Services.Client.resources.dll_7"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_5"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll_5"/>
+    <ROW Feature_="MainFeature" Component_="System.Spatial.resources.dll_7"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.Edm.resources.dll_8"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.OData.resources.dll_8"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.Services.Client.resources.dll_8"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Open.Azure.AD.CommonLibrary.dllHelp.xml_6"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Open.Azure.AD.CommonLibrary.Resources.resources.dll_6"/>
+    <ROW Feature_="MainFeature" Component_="System.Spatial.resources.dll_8"/>
+    <ROW Feature_="MainFeature" Component_="AdministrationConfig.wixproj"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_1"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_2"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll_2"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_2"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_3"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll_3"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_3"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_4"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll_4"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_4"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_5"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll_5"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_5"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_6"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll_6"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_6"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Azure.ActiveDirectory.Client.Framework.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Azure.ActiveDirectory.GraphClient.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.Edm.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.Edm.resources.dll_9"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.OData.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.OData.resources.dll_9"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.Services.Client.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.Services.Client.resources.dll_9"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.IdentityModel.Clients.ActiveDirectory.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Administration.Automation.PSModule.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Administration.Automation.PSModule.Resources.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll_7"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_7"/>
+    <ROW Feature_="MainFeature" Component_="Newtonsoft.Json.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="RestSharp.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_7"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll_8"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_8"/>
+    <ROW Feature_="MainFeature" Component_="System.IdentityModel.Tokens.Jwt.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="System.Management.Automation.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="System.Spatial.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="System.Spatial.resources.dll_9"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_8"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll_9"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_9"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Administration.Automation.PSModule.dllhelp.xml_9"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Identity.Federation.PowerShell.dll_10"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Online.Identity.Federation.PowerShell.Strings.dll_10"/>
+    <ROW Feature_="MainFeature" Component_="LICENSE"/>
+    <ROW Feature_="MainFeature" Component_="ConvertFromSecurePassword.ps1"/>
+    <ROW Feature_="MainFeature" Component_="GetPassword.ps1"/>
+    <ROW Feature_="MainFeature" Component_="DCSAdminTOOLKIT.lnk"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>

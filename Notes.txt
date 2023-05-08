@@ -1,0 +1,6 @@
+VSCODE run as admin
+Default powershell version Windows PowerShell (x64)
+
+to connect to module services consider credentials on launch then forward credentials when attempting to use a cloud service
+
+promote ad users in bulk
